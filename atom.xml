@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gentlesiri.top/"/>
-  <updated>2019-10-23T06:03:46.960Z</updated>
+  <updated>2019-10-23T08:27:21.433Z</updated>
   <id>https://gentlesiri.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>second</title>
+    <link href="https://gentlesiri.top/2019/10/23/second/"/>
+    <id>https://gentlesiri.top/2019/10/23/second/</id>
+    <published>2019-10-23T08:26:27.000Z</published>
+    <updated>2019-10-23T08:27:21.433Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;web前端&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="web前端" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="web前端" scheme="https://gentlesiri.top/tags/web%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>my -first</title>
