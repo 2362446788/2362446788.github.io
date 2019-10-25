@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gentlesiri.top/"/>
-  <updated>2019-10-23T08:27:21.433Z</updated>
+  <updated>2019-10-25T01:25:07.716Z</updated>
   <id>https://gentlesiri.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>second</title>
-    <link href="https://gentlesiri.top/2019/10/23/second/"/>
-    <id>https://gentlesiri.top/2019/10/23/second/</id>
-    <published>2019-10-23T08:26:27.000Z</published>
-    <updated>2019-10-23T08:27:21.433Z</updated>
+    <title>python day1</title>
+    <link href="https://gentlesiri.top/2019/10/23/day-01/"/>
+    <id>https://gentlesiri.top/2019/10/23/day-01/</id>
+    <published>2019-10-23T06:01:54.000Z</published>
+    <updated>2019-10-25T01:25:07.716Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,61 @@
       
         
         
-          &lt;p&gt;web前端&lt;/p&gt;
-
+          &lt;h1 id=&quot;Python编程题&quot;&gt;&lt;a href=&quot;#Python编程题&quot; class=&quot;headerlink&quot; title=&quot;Python编程题&quot;&gt;&lt;/a&gt;Python编程题&lt;/h1&gt;&lt;h2 id=&quot;Day-01&quot;&gt;&lt;a href=&quot;#Day-01&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://gentlesiri.top/categories/python/"/>
+    
+    
+      <category term="python基础" scheme="https://gentlesiri.top/tags/python%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="编程" scheme="https://gentlesiri.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git控制命令</title>
+    <link href="https://gentlesiri.top/2019/10/23/git-kong-zhi-ming-ling/"/>
+    <id>https://gentlesiri.top/2019/10/23/git-kong-zhi-ming-ling/</id>
+    <published>2019-10-23T06:01:54.000Z</published>
+    <updated>2019-10-25T01:26:44.683Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、如何通过git将项目推送到github远程仓库&quot;&gt;&lt;a href=&quot;#一、如何通过git将项目推送到github远程仓库&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="git" scheme="https://gentlesiri.top/categories/git/"/>
+    
+    
+      <category term="git" scheme="https://gentlesiri.top/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习表单</title>
+    <link href="https://gentlesiri.top/2019/10/23/biao-dan/"/>
+    <id>https://gentlesiri.top/2019/10/23/biao-dan/</id>
+    <published>2019-10-23T06:01:54.000Z</published>
+    <updated>2019-10-25T01:27:57.464Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;表单的学习&quot;&gt;&lt;a href=&quot;#表单的学习&quot; class=&quot;headerlink&quot; title=&quot;表单的学习&quot;&gt;&lt;/a&gt;表单的学习&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code
         
       
     
@@ -44,11 +97,11 @@
   </entry>
   
   <entry>
-    <title>my -first</title>
-    <link href="https://gentlesiri.top/2019/10/23/my-first/"/>
-    <id>https://gentlesiri.top/2019/10/23/my-first/</id>
+    <title>Web网页开发</title>
+    <link href="https://gentlesiri.top/2019/10/23/qian-duan-html/"/>
+    <id>https://gentlesiri.top/2019/10/23/qian-duan-html/</id>
     <published>2019-10-23T06:01:54.000Z</published>
-    <updated>2019-10-23T06:03:46.960Z</updated>
+    <updated>2019-10-25T01:29:07.532Z</updated>
     
     <summary type="html">
     
@@ -56,7 +109,8 @@
       
         
         
-          &lt;h2 id=&quot;测试一下&quot;&gt;&lt;a href=&quot;#测试一下&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;Web网页开发&quot;&gt;&lt;a href=&quot;#Web网页开发&quot; class=&quot;headerlink&quot; title=&quot;Web网页开发&quot;&gt;&lt;/a&gt;Web网页开发&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;什么是HTML&quot;&gt;&lt;a href=&quot;#什么是HTML&quot;
         
       
     
@@ -64,12 +118,8 @@
     
       <category term="web前端" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="web后端" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/web%E5%90%8E%E7%AB%AF/"/>
-    
     
       <category term="web前端" scheme="https://gentlesiri.top/tags/web%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="web后端" scheme="https://gentlesiri.top/tags/web%E5%90%8E%E7%AB%AF/"/>
     
   </entry>
   

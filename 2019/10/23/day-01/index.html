@@ -4,12 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="second, gentlesir 的博客">
+    <meta name="keywords" content="python day1, gentlesir 的博客">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
-    <meta name="description" content="web前端
-">
+    <meta name="description" content="Python编程题Day_01今天是五道很简单的题目哦1.问题:编写一个程序，它将找到所有这些数字，可被7整除，但不是5的倍数，2000年至3200年(包括在内)。得到的数字应按逗号分隔的顺序打印在一行上。提示:考虑使用range(#beg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>second | gentlesir 的博客</title>
+    <title>python day1 | gentlesir 的博客</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -291,13 +290,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/26.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        second
+                        python day1
                     </div>
                 </div>
             </div>
@@ -408,8 +407,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/web前端/" target="_blank">
-                            <span class="chip bg-color">web前端</span>
+                        <a href="/tags/python基础/" target="_blank">
+                            <span class="chip bg-color">python基础</span>
+                        </a>
+                        
+                        <a href="/tags/编程/" target="_blank">
+                            <span class="chip bg-color">编程</span>
                         </a>
                         
                     </div>
@@ -420,8 +423,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/web前端/" class="post-category" target="_blank">
-                            web前端
+                        <a href="/categories/python/" class="post-category" target="_blank">
+                            python
                         </a>
                         
                     </div>
@@ -446,30 +449,67 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3
+                    609
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
 
-                
-                <div id="busuanzi_container_page_pv" class="info-break-policy">
-                    <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                    <span id="busuanzi_value_page_pv"></span>
-                </div>
                 
             </div>
         </div>
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>web前端</p>
+                <h1 id="Python编程题"><a href="#Python编程题" class="headerlink" title="Python编程题"></a>Python编程题</h1><h2 id="Day-01"><a href="#Day-01" class="headerlink" title="Day_01"></a>Day_01</h2><h3 id="今天是五道很简单的题目哦"><a href="#今天是五道很简单的题目哦" class="headerlink" title="今天是五道很简单的题目哦"></a>今天是五道很简单的题目哦</h3><p><strong>1.问题:编写一个程序，它将找到所有这些数字，可被7整除，但不是5的倍数，2000年至3200年(包括在内)。得到的数字应按逗号分隔的顺序打印在一行上。<br>提示:考虑使用range(#begin， #end)方法,使用到join函数：‘step’.join(i),以step的方式分割字符串列表i。</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">l<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">,</span> <span class="token number">3201</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">7</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">and</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">5</span><span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        l<span class="token punctuation">.</span>append<span class="token punctuation">(</span>str<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>2.问题:编写一个可以计算给定数的阶乘的程序。结果应该以逗号分隔的顺序打印在一行上。假设向程序提供以下输入:8<br>则输出为:40320<br>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。</strong></p>
+<pre class="line-numbers language-pytho"><code class="language-pytho">def fact(x):
+    if(x == 0):
+        return 1
+    else:
+        return x * fact(x-1)
+demo = int(input("请输入："))
+print(fact(demo))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>3.问题:使用给定的整数n，编写一个程序生成一个包含(i, i<em>*</em></strong>i)的字典，该字典包含1到n之间的整数(两者都包含)。然后程序应该打印字典。<em><em><br><strong>假设向程序提供以下输入:8</strong><br>**则输出为:<br>{1:1，2:4，3:9，4:16，5:25，6:36，,7:49，8:64}</em></em></p>
+<p><strong>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。考虑使用dict类型()</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">demo <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"请输入:"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+d <span class="token operator">=</span> dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>demo<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    d<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>i<span class="token operator">*</span>i
+<span class="token keyword">print</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>4.问题:编写一个程序，该程序接受控制台以逗号分隔的数字序列，并生成包含每个数字的列表和元组。假设向程序提供以下输入:<br>34岁,67年,55岁,33岁,12日,98年<br>则输出为:[‘34’， ‘67’， ‘55’， ‘33’， ‘12’， ‘98’]<br>               (‘34’， ‘67’， ‘55’， ‘33’， ‘12’， ‘98’)</strong></p>
+<p><strong>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。方法可以将列表转换为元组</strong></p>
+<pre class="line-numbers language-python"><code class="language-python">demo <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"请输入:"</span><span class="token punctuation">)</span>
+list <span class="token operator">=</span> demo<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span>
+tuple <span class="token operator">=</span> list<span class="token punctuation">.</span>tuple<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>tuple<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>5.问题:定义一个至少有两个方法的类:        getString:从控制台输入获取字符串        printString::打印大写母的字符串。<br>还请包含简单的测试函数来测试类方法。<br>提示:使用_init__方法构造一些参数</strong></p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">inputoutDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>s <span class="token operator">=</span> <span class="token string">''</span>
+
+    <span class="token keyword">def</span> <span class="token function">getString</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'请输入：'</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>s <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">printString</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>s<span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+demo <span class="token operator">=</span> inputoutDemo<span class="token punctuation">(</span><span class="token punctuation">)</span>
+demo<span class="token punctuation">.</span>getString<span class="token punctuation">(</span><span class="token punctuation">)</span>
+demo<span class="token punctuation">.</span>printString<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -628,9 +668,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《second》
+                    《python day1》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/23/second/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/23/day-01/" property="cc:attributionName"
                rel="cc:attributionURL">
                 王涛
             </a> 采用
@@ -675,20 +715,19 @@
                 <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2019/10/23/second/">
+                <a href="/2019/10/23/day-01/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="second">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="python day1">
                         
-                        <span class="card-title">second</span>
+                        <span class="card-title">python day1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            web前端
-
+                            用python来编程刷题
                         
                     </div>
                     <div class="publish-info">
@@ -699,8 +738,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/web前端/" class="post-category" target="_blank">
-                                    web前端
+                            <a href="/categories/python/" class="post-category" target="_blank">
+                                    python
                                 </a>
                             
                             
@@ -711,8 +750,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/web前端/" target="_blank">
-                        <span class="chip bg-color">web前端</span>
+                    <a href="/tags/python基础/" target="_blank">
+                        <span class="chip bg-color">python基础</span>
+                    </a>
+                    
+                    <a href="/tags/编程/" target="_blank">
+                        <span class="chip bg-color">编程</span>
                     </a>
                     
                 </div>
@@ -726,19 +769,19 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/23/my-first/">
+                <a href="/2019/10/23/git-kong-zhi-ming-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="my -first">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="git控制命令">
                         
-                        <span class="card-title">my -first</span>
+                        <span class="card-title">git控制命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这只是一个测试
+                            一些git的简单命令
                         
                     </div>
                     <div class="publish-info">
@@ -749,12 +792,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/web前端/" class="post-category" target="_blank">
-                                    web前端
-                                </a>
-                            
-                            <a href="/categories/web前端/web后端/" class="post-category" target="_blank">
-                                    web后端
+                            <a href="/categories/git/" class="post-category" target="_blank">
+                                    git
                                 </a>
                             
                             
@@ -764,12 +803,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/web前端/" target="_blank">
-                        <span class="chip bg-color">web前端</span>
-                    </a>
-                    
-                    <a href="/tags/web后端/" target="_blank">
-                        <span class="chip bg-color">web后端</span>
+                    <a href="/tags/git/" target="_blank">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -931,7 +966,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">9</span>
+            <span class="white-color">4.3k</span>
             
 
             <br>
@@ -939,21 +974,8 @@
 
             
             
-            <br>
-            
-            <span id="busuanzi_container_site_pv" style='display:none'>
-                <i class="fa fa-heart-o"></i>
-                本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv" style='display:none'>
-                人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
-            </span>
-            
-            
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
+        <div class="col s12 m4 l4 social-link ">
     <a href="https://github.com/2362446788" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fa fa-github"></i>
     </a>
@@ -1110,11 +1132,12 @@ $(function () {
     
 
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
     <!-- 雪花特效 -->
     
+
+    
+   <!--  <script id="myhk" src="https://player.limh.me/player/js/player.js" key="157196518317" m="1"></script> -->
 
 </body>
 

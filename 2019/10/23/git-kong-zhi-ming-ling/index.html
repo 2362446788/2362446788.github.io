@@ -4,12 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="my -first, gentlesir 的博客">
+    <meta name="keywords" content="git控制命令, gentlesir 的博客">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
-    <meta name="description" content="测试一下来吧
-">
+    <meta name="description" content="一、如何通过git将项目推送到github远程仓库首先，电脑里需要安装了git，还有自己的github账户。第一步：我们需要先创建一个本地的版本库（其实也就是一个文件夹）。然后在里面书写自己的项目
+       mkdir projects">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>my -first | gentlesir 的博客</title>
+    <title>git控制命令 | gentlesir 的博客</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -291,13 +291,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/25.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        my -first
+                        git控制命令
                     </div>
                 </div>
             </div>
@@ -408,12 +408,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/web前端/" target="_blank">
-                            <span class="chip bg-color">web前端</span>
-                        </a>
-                        
-                        <a href="/tags/web后端/" target="_blank">
-                            <span class="chip bg-color">web后端</span>
+                        <a href="/tags/git/" target="_blank">
+                            <span class="chip bg-color">git</span>
                         </a>
                         
                     </div>
@@ -424,12 +420,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/web前端/" class="post-category" target="_blank">
-                            web前端
-                        </a>
-                        
-                        <a href="/categories/web前端/web后端/" class="post-category" target="_blank">
-                            web后端
+                        <a href="/categories/git/" class="post-category" target="_blank">
+                            git
                         </a>
                         
                     </div>
@@ -454,30 +446,125 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
                 
 
-                
-                <div id="busuanzi_container_page_pv" class="info-break-policy">
-                    <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                    <span id="busuanzi_value_page_pv"></span>
-                </div>
                 
             </div>
         </div>
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="测试一下"><a href="#测试一下" class="headerlink" title="测试一下"></a>测试一下</h2><p><code>来吧</code></p>
+                <h1 id="一、如何通过git将项目推送到github远程仓库"><a href="#一、如何通过git将项目推送到github远程仓库" class="headerlink" title="一、如何通过git将项目推送到github远程仓库"></a>一、如何通过git将项目推送到github远程仓库</h1><pre><code>首先，电脑里需要安装了git，还有自己的github账户。</code></pre><pre><code>第一步：我们需要先创建一个本地的版本库（其实也就是一个文件夹）。然后在里面书写自己的项目
+       mkdir projects</code></pre><pre><code>第二步：初始化:           
+        进入这个文件夹， git init </code></pre><pre><code>配置个人信息：
+    # 全局配置个人信息
+    git config --global user.name &quot;username&quot;
+    git config --global user.email &quot;email@qq.com&quot;</code></pre><pre><code>查看git设置列表信息
+     git config --list </code></pre><pre><code>第三步:  1.通过git status查看当前文件的状态，也可以跳过这一步;
+        2.通过git add &#39;指定文件&#39;  添加到仓库，
+        3.或者通过git add .         把该目录下的所有文件添加到仓库。</code></pre><pre><code>第四步：提交：
+        git commit -m &quot;提交内容-描述&quot;。</code></pre><pre><code>第五步：创建密钥、公钥SSH KEY。先看一下你C盘用户目录下有没有.ssh目录，有的话看下里面有没有id_rsa和               id_rsa.pub这两个文件，有就跳到下一步，没有就通过下面命令创建：
+
+       ssh-keygen -t rsa -C &quot;youremail@example.com&quot;
+
+ 然后一路回车。这时你就会在用户下的.ssh目录里找到id_rsa和id_rsa.pub这两个文件。
+
+ 查看id_rsa.pub公钥：  1. cd ~/.ssh  
+                     2. ls   
+                     3.  cat id_rsa.pub </code></pre><pre><code>第六步：登录Github,找到右上角的图标，打开点进里面的Settings，再选中里面的SSH and GPG KEYS，
+       1.点击右上角的New SSH key，然后Title里面随便填，
+       2.再把刚才id_rsa.pub里面的内容复制到Title下面的Key内容框里面，最后点击Add SSH key，完成钥匙配置</code></pre><pre><code>第七步：在Github上创建一个Git仓库。</code></pre><pre><code> 第八步：仓库进行关联：
+         在Github上创建好Git仓库之后我们就可以和本地仓库进行关联了，根据创建好的Git仓库页面的提示，
+         可以在本地TEST仓库的命令行输入：
+
+         git remote add origin &quot;远程仓库地址&quot;</code></pre><pre><code>第九步：关联好之后我们就可以把本地库的所有内容推送到远程仓库（也就是Github）上了，通过：
+       $ git push -u origin master
+</code></pre><pre><code>第十步：由于新建的远程仓库是空的，所以要加上-u这个参数，等远程仓库里面有了内容之后，
+      下次再从本地库上传内容的时候只需下面这样就可以了：
+      $ git push origin master
+
+    这时候你再重新刷新你的Github页面进入刚才新建的那个仓库里面就会发现项目已经成功上传了.</code></pre><pre><code>第十一：远程仓库clone到 服务器项目文件夹中：
+       git clone 远程仓库地址</code></pre><h1 id="二、常用远程推送失败等问题-、-解决方案："><a href="#二、常用远程推送失败等问题-、-解决方案：" class="headerlink" title="二、常用远程推送失败等问题 、 解决方案："></a>二、常用远程推送失败等问题 、 解决方案：</h1><p>问题一： error: failed to push some refs to ‘远程仓库地址’</p>
+<pre><code>1.解决方案：git pull --rebase origin master 
+2.git push -u origin master               --&quot;这样，就可以重放您的本地提交在新更新的原始/master之上。&quot;</code></pre><p>问题二：fatal: remote origin already exists.</p>
+<pre><code> 1、先输入$ git remote rm origin
+ 2、再输入$ git remote add origin     &#39;远程仓库地址&#39;</code></pre><p>问题三：fatal: Could not read from remote repository.</p>
+<pre><code>1.远程仓库地址不对，查看一下 ：   git remote -v 
+2.然后在终端输入：               git remote set-url origin 远程仓库地址
+3.重新push就可以了：             git push -u origin master    </code></pre><h1 id="二、git版本其他-命令"><a href="#二、git版本其他-命令" class="headerlink" title="二、git版本其他 命令"></a>二、git版本其他 命令</h1><p><strong>3.查看历史版本</strong></p>
+<pre class="line-numbers language-linux"><code class="language-linux">git log
+git reflog<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<blockquote>
+<p>git reflog 可以查看所有分支的所有操作记录（包括commit和reset的操作），包括已经被删除的commit记录，git log 不能察看已经删除了的commit记录</p>
+</blockquote>
+<h4 id="4-回退版本"><a href="#4-回退版本" class="headerlink" title="4.回退版本"></a>4.回退版本</h4><p>方法一：</p>
+<ul>
+<li><code>HEAD</code>表示当前最新版本</li>
+<li><code>HEAD^</code>表示当前最新版本的前一个版本</li>
+<li><code>HEAD^^</code>表示当前最新版本的前两个版本，<strong>以此类推…</strong></li>
+<li><code>HEAD~1</code>表示当前最新版本的前一个版本</li>
+<li><code>HEAD~10</code>表示当前最新版本的前10个版本，<strong>以此类推…</strong></li>
+</ul>
+<pre class="line-numbers language-git"><code class="language-git">git reset --hard HEAD^<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>方法二：</p>
+<p><strong>当版本非常多时可选择的方案</strong></p>
+<pre class="line-numbers language-linux"><code class="language-linux"># 通过每个版本的版本号回退到指定版本
+git reset --hard 版本号<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>#### </p>
+<h4 id="5-撤销修改"><a href="#5-撤销修改" class="headerlink" title="5.撤销修改"></a>5.撤销修改</h4><ul>
+<li><p>只能撤销工作区、暂存区的代码</p>
+<ul>
+<li><p>撤销工作区代码</p>
+<pre class="line-numbers language-linux"><code class="language-linux">git checkout 文件名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>撤销暂存区代码</p>
+<pre class="line-numbers language-linux"><code class="language-linux"># 第一步：将暂存区代码撤销到工作区
+git reset HEAD  文件名
+# 第二步：撤销工作区代码
+git checkout 文件名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+</li>
+<li><p>撤销仓库区的代码就相当于回退版本操作</p>
+</li>
+</ul>
+<h4 id="6-版本对比"><a href="#6-版本对比" class="headerlink" title="6.版本对比"></a>6.版本对比</h4><ul>
+<li>对比本地仓库库与工作区<ul>
+<li>在工作区，修改文件</li>
+<li><code>git diff HEAD -- test1.py</code></li>
+</ul>
+</li>
+<li>对比本地仓库各版本代码<ul>
+<li><code>git diff HEAD HEAD^ -- test1.py</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="7-文件删除"><a href="#7-文件删除" class="headerlink" title="7.文件删除"></a>7.文件删除</h4><ul>
+<li><p>确定删除处理</p>
+<pre class="line-numbers language-linux"><code class="language-linux"># 删除文件
+rm 文件名
+# git确定删除文件，对比添加文件git add 
+git rm 文件名
+# 删除后记录删除操作版本
+git commit -m '删除描述'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>误删处理，撤销修改</p>
+<pre class="line-numbers language-linux"><code class="language-linux"># 删除文件
+rm 文件名
+# git撤销修改
+git checkout -- 文件名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
 
             </div>
             <hr />
@@ -636,9 +723,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《my -first》
+                    《git控制命令》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/23/my-first/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/23/git-kong-zhi-ming-ling/" property="cc:attributionName"
                rel="cc:attributionURL">
                 王涛
             </a> 采用
@@ -682,20 +769,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/10/23/second/">
+                <a href="/2019/10/23/day-01/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="second">
+                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="python day1">
                         
-                        <span class="card-title">second</span>
+                        <span class="card-title">python day1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            web前端
-
+                            用python来编程刷题
                         
                     </div>
                     <div class="publish-info">
@@ -706,8 +792,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/web前端/" class="post-category" target="_blank">
-                                    web前端
+                            <a href="/categories/python/" class="post-category" target="_blank">
+                                    python
                                 </a>
                             
                             
@@ -717,8 +803,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/web前端/" target="_blank">
-                        <span class="chip bg-color">web前端</span>
+                    <a href="/tags/python基础/" target="_blank">
+                        <span class="chip bg-color">python基础</span>
+                    </a>
+                    
+                    <a href="/tags/编程/" target="_blank">
+                        <span class="chip bg-color">编程</span>
                     </a>
                     
                 </div>
@@ -729,22 +819,22 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/23/my-first/">
+                <a href="/2019/10/23/biao-dan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="my -first">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="学习表单">
                         
-                        <span class="card-title">my -first</span>
+                        <span class="card-title">学习表单</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这只是一个测试
+                            对前端表单这块内容的整体概述
                         
                     </div>
                     <div class="publish-info">
@@ -759,24 +849,15 @@
                                     web前端
                                 </a>
                             
-                            <a href="/categories/web前端/web后端/" class="post-category" target="_blank">
-                                    web后端
-                                </a>
-                            
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/web前端/" target="_blank">
                         <span class="chip bg-color">web前端</span>
-                    </a>
-                    
-                    <a href="/tags/web后端/" target="_blank">
-                        <span class="chip bg-color">web后端</span>
                     </a>
                     
                 </div>
@@ -938,7 +1019,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">9</span>
+            <span class="white-color">4.3k</span>
             
 
             <br>
@@ -946,21 +1027,8 @@
 
             
             
-            <br>
-            
-            <span id="busuanzi_container_site_pv" style='display:none'>
-                <i class="fa fa-heart-o"></i>
-                本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv" style='display:none'>
-                人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
-            </span>
-            
-            
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
+        <div class="col s12 m4 l4 social-link ">
     <a href="https://github.com/2362446788" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fa fa-github"></i>
     </a>
@@ -1117,11 +1185,12 @@ $(function () {
     
 
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
     <!-- 雪花特效 -->
     
+
+    
+   <!--  <script id="myhk" src="https://player.limh.me/player/js/player.js" key="157196518317" m="1"></script> -->
 
 </body>
 
