@@ -4,11 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="python day1, gentlesir 的博客">
+    <meta name="keywords" content="gentlesir 的博客">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
-    <meta name="description" content="Python编程题Day_01今天是五道很简单的题目哦1.问题:编写一个程序，它将找到所有这些数字，可被7整除，但不是5的倍数，2000年至3200年(包括在内)。得到的数字应按逗号分隔的顺序打印在一行上。提示:考虑使用range(#beg">
+    <meta name="description" content="基于vue +django的小区团购电商平台–好物项目背景好物面向小区居民设计的，致力于为小区用户打造更舒适的网上购物环境，解决居民日常用品的购买以及送货上门，让用户更快捷的获取自己想要的商品。
+项目目标本平台是一个类美团的电商系统，以美团">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>python day1 | gentlesir 的博客</title>
+    <title>gentlesir 的博客</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -290,13 +291,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        python day1
+                        
                     </div>
                 </div>
             </div>
@@ -406,28 +407,11 @@
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        
-                        <a href="/tags/python基础/" target="_blank">
-                            <span class="chip bg-color">python基础</span>
-                        </a>
-                        
-                        <a href="/tags/编程/" target="_blank">
-                            <span class="chip bg-color">编程</span>
-                        </a>
-                        
+                        <span class="chip bg-color">无标签</span>
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fa fa-bookmark fa-fw icon-category"></i>
-                        
-                        <a href="/categories/python/" class="post-category" target="_blank">
-                            python
-                        </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -435,7 +419,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-23
+                    2019-09-17
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -449,14 +433,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    609
+                    428
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
                 
@@ -467,49 +451,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Python编程题"><a href="#Python编程题" class="headerlink" title="Python编程题"></a>Python编程题</h1><h2 id="Day-01"><a href="#Day-01" class="headerlink" title="Day_01"></a>Day_01</h2><h3 id="今天是五道很简单的题目哦"><a href="#今天是五道很简单的题目哦" class="headerlink" title="今天是五道很简单的题目哦"></a>今天是五道很简单的题目哦</h3><p><strong>1.问题:编写一个程序，它将找到所有这些数字，可被7整除，但不是5的倍数，2000年至3200年(包括在内)。得到的数字应按逗号分隔的顺序打印在一行上。<br>提示:考虑使用range(#begin， #end)方法,使用到join函数：‘step’.join(i),以step的方式分割字符串列表i。</strong></p>
-<pre class="line-numbers language-python"><code class="language-python">l<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">,</span> <span class="token number">3201</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">7</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">and</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">5</span><span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        l<span class="token punctuation">.</span>append<span class="token punctuation">(</span>str<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>2.问题:编写一个可以计算给定数的阶乘的程序。结果应该以逗号分隔的顺序打印在一行上。假设向程序提供以下输入:8<br>则输出为:40320<br>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。</strong></p>
-<pre class="line-numbers language-pytho"><code class="language-pytho">def fact(x):
-    if(x == 0):
-        return 1
-    else:
-        return x * fact(x-1)
-demo = int(input("请输入："))
-print(fact(demo))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>3.问题:使用给定的整数n，编写一个程序生成一个包含(i, i<em>*</em></strong>i)的字典，该字典包含1到n之间的整数(两者都包含)。然后程序应该打印字典。<em><em><br><strong>假设向程序提供以下输入:8</strong><br>**则输出为:<br>{1:1，2:4，3:9，4:16，5:25，6:36，,7:49，8:64}</em></em></p>
-<p><strong>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。考虑使用dict类型()</strong></p>
-<pre class="line-numbers language-python"><code class="language-python">demo <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"请输入:"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-d <span class="token operator">=</span> dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>demo<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    d<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>i<span class="token operator">*</span>i
-<span class="token keyword">print</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4.问题:编写一个程序，该程序接受控制台以逗号分隔的数字序列，并生成包含每个数字的列表和元组。假设向程序提供以下输入:<br>34岁,67年,55岁,33岁,12日,98年<br>则输出为:[‘34’， ‘67’， ‘55’， ‘33’， ‘12’， ‘98’]<br>               (‘34’， ‘67’， ‘55’， ‘33’， ‘12’， ‘98’)</strong></p>
-<p><strong>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。方法可以将列表转换为元组</strong></p>
-<pre class="line-numbers language-python"><code class="language-python">demo <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"请输入:"</span><span class="token punctuation">)</span>
-list <span class="token operator">=</span> demo<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span>
-tuple <span class="token operator">=</span> list<span class="token punctuation">.</span>tuple<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>tuple<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>5.问题:定义一个至少有两个方法的类:        getString:从控制台输入获取字符串        printString::打印大写母的字符串。<br>还请包含简单的测试函数来测试类方法。<br>提示:使用_init__方法构造一些参数</strong></p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">inputoutDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        self<span class="token punctuation">.</span>s <span class="token operator">=</span> <span class="token string">''</span>
-
-    <span class="token keyword">def</span> <span class="token function">getString</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'请输入：'</span><span class="token punctuation">)</span>
-        self<span class="token punctuation">.</span>s <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-    <span class="token keyword">def</span> <span class="token function">printString</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>s<span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-demo <span class="token operator">=</span> inputoutDemo<span class="token punctuation">(</span><span class="token punctuation">)</span>
-demo<span class="token punctuation">.</span>getString<span class="token punctuation">(</span><span class="token punctuation">)</span>
-demo<span class="token punctuation">.</span>printString<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="基于vue-django的小区团购电商平台–好物"><a href="#基于vue-django的小区团购电商平台–好物" class="headerlink" title="基于vue +django的小区团购电商平台–好物"></a>基于vue +django的小区团购电商平台–好物</h1><h2 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a>项目背景</h2><p><strong>好物</strong>面向小区居民设计的，致力于为小区用户打造更舒适的网上购物环境，解决居民日常用品的购买以及送货上门，让用户更快捷的获取自己想要的商品。</p>
+<h2 id="项目目标"><a href="#项目目标" class="headerlink" title="项目目标"></a>项目目标</h2><p>本平台是一个类美团的电商系统，以美团的pc端站点作为技术参考。主要实现的功能有以下几点：<br><img src="C:\Users\Administrator\Desktop\hexo\source\_posts\goods\功能.jpg"></p>
+<h2 id="项目方案"><a href="#项目方案" class="headerlink" title="项目方案"></a>项目方案</h2><p>本平台使用前端vue框架以及以python为后端开发语言的django框架进行开发。</p>
+<h2 id="项目可行性"><a href="#项目可行性" class="headerlink" title="项目可行性"></a>项目可行性</h2><p>本人使用过vue框架，相对于来说比较熟悉，前端功能能实现。之前没有尝试过vue+django，想试试这种前后端完全分离的系统。在此期间不断提升自己与代码交流的能力。<br>由于django这个框架是第一次使用，所以可能存在的隐患有：有些方法无法实现他的功能，性能优化不好，运行起来耗时长等等。</p>
+<h2 id="项目计划"><a href="#项目计划" class="headerlink" title="项目计划"></a>项目计划</h2><p>使用未使用过的django技术框架是一次挑战，学习计划如下：</p>
+<ol>
+<li>学习并熟悉使用django技术，期间用<strong>小饭桌</strong>demo练手，预计学习时间为五个星期，也就是DDL为2019-10-30。</li>
+<li>把<strong>好物</strong>的前端搭建起来。DDL：2019-11-15</li>
+<li>使用基本熟练的django把后端也搭建起来，实现大部分功能。DDL: 2019-11-25</li>
+<li>最后前后端连接起来，将<strong>好物</strong>进行到底。DDL：期末汇报前</li>
+</ol>
+<p>ps:<br>临时加的成果：做出一个站点的小demo出来。DDL：2019-9-27</p>
 
             </div>
             <hr />
@@ -668,9 +621,9 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《python day1》
+                    《》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/23/day-01/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/17/hao-wu/" property="cc:attributionName"
                rel="cc:attributionURL">
                 王涛
             </a> 采用
@@ -714,74 +667,25 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/10/23/git-kong-zhi-ming-ling/">
+                <a href="/2019/10/23/qian-duan-html/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="git控制命令">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Web网页开发">
                         
-                        <span class="card-title">git控制命令</span>
+                        <span class="card-title">Web网页开发</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一些git的简单命令
+                            Web前端开发之前的一些小知识
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-23
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/git/" class="post-category" target="_blank">
-                                    git
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/git/" target="_blank">
-                        <span class="chip bg-color">git</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/10/23/biao-dan/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="学习表单">
-                        
-                        <span class="card-title">学习表单</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            对前端表单这块内容的整体概述
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-23
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -802,6 +706,42 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
                     </a>
                     
                 </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/09/17/hao-wu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            基于vue +django的小区团购电商平台–好物项目背景好物面向小区居民设计的，致力于为小区用户打造更舒适的网上购物环境，解决居民日常用品的购买以及送货上门，让用户更快捷的获取自己想要的商品。
+项目目标本平台是一个类美团的电商系统，以美团
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-17
+                            </span>
+                        <span class="publish-author">
+                            
+                        </span>
+                    </div>
+                </div>
+
                 
             </div>
         </div>
@@ -945,13 +885,6 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
 
 </main>
 
-
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
     <footer class="page-footer bg-color">
     <div class="container row center-align">

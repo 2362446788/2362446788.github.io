@@ -4,11 +4,14 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="python day1, gentlesir 的博客">
+    <meta name="keywords" content="JSON, gentlesir 的博客">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
-    <meta name="description" content="Python编程题Day_01今天是五道很简单的题目哦1.问题:编写一个程序，它将找到所有这些数字，可被7整除，但不是5的倍数，2000年至3200年(包括在内)。得到的数字应按逗号分隔的顺序打印在一行上。提示:考虑使用range(#beg">
+    <meta name="description" content="&amp;lt;!doctype html&gt;
+&amp;lt;html&gt;
+    &amp;lt;head&gt;
+        &amp;lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=utf-8&#34;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>python day1 | gentlesir 的博客</title>
+    <title>JSON | gentlesir 的博客</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -290,13 +293,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        python day1
+                        JSON
                     </div>
                 </div>
             </div>
@@ -407,12 +410,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/python基础/" target="_blank">
-                            <span class="chip bg-color">python基础</span>
+                        <a href="/tags/web前端/" target="_blank">
+                            <span class="chip bg-color">web前端</span>
                         </a>
                         
-                        <a href="/tags/编程/" target="_blank">
-                            <span class="chip bg-color">编程</span>
+                        <a href="/tags/JSON/" target="_blank">
+                            <span class="chip bg-color">JSON</span>
                         </a>
                         
                     </div>
@@ -423,8 +426,12 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/python/" class="post-category" target="_blank">
-                            python
+                        <a href="/categories/web前端/" class="post-category" target="_blank">
+                            web前端
+                        </a>
+                        
+                        <a href="/categories/web前端/JSON/" class="post-category" target="_blank">
+                            JSON
                         </a>
                         
                     </div>
@@ -435,7 +442,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-23
+                    2019-10-26
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -449,14 +456,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    609
+                    330
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
                 
@@ -467,49 +474,99 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Python编程题"><a href="#Python编程题" class="headerlink" title="Python编程题"></a>Python编程题</h1><h2 id="Day-01"><a href="#Day-01" class="headerlink" title="Day_01"></a>Day_01</h2><h3 id="今天是五道很简单的题目哦"><a href="#今天是五道很简单的题目哦" class="headerlink" title="今天是五道很简单的题目哦"></a>今天是五道很简单的题目哦</h3><p><strong>1.问题:编写一个程序，它将找到所有这些数字，可被7整除，但不是5的倍数，2000年至3200年(包括在内)。得到的数字应按逗号分隔的顺序打印在一行上。<br>提示:考虑使用range(#begin， #end)方法,使用到join函数：‘step’.join(i),以step的方式分割字符串列表i。</strong></p>
-<pre class="line-numbers language-python"><code class="language-python">l<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">,</span> <span class="token number">3201</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">7</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">and</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">5</span><span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        l<span class="token punctuation">.</span>append<span class="token punctuation">(</span>str<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>2.问题:编写一个可以计算给定数的阶乘的程序。结果应该以逗号分隔的顺序打印在一行上。假设向程序提供以下输入:8<br>则输出为:40320<br>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。</strong></p>
-<pre class="line-numbers language-pytho"><code class="language-pytho">def fact(x):
-    if(x == 0):
-        return 1
-    else:
-        return x * fact(x-1)
-demo = int(input("请输入："))
-print(fact(demo))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>3.问题:使用给定的整数n，编写一个程序生成一个包含(i, i<em>*</em></strong>i)的字典，该字典包含1到n之间的整数(两者都包含)。然后程序应该打印字典。<em><em><br><strong>假设向程序提供以下输入:8</strong><br>**则输出为:<br>{1:1，2:4，3:9，4:16，5:25，6:36，,7:49，8:64}</em></em></p>
-<p><strong>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。考虑使用dict类型()</strong></p>
-<pre class="line-numbers language-python"><code class="language-python">demo <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"请输入:"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-d <span class="token operator">=</span> dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>demo<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    d<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>i<span class="token operator">*</span>i
-<span class="token keyword">print</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4.问题:编写一个程序，该程序接受控制台以逗号分隔的数字序列，并生成包含每个数字的列表和元组。假设向程序提供以下输入:<br>34岁,67年,55岁,33岁,12日,98年<br>则输出为:[‘34’， ‘67’， ‘55’， ‘33’， ‘12’， ‘98’]<br>               (‘34’， ‘67’， ‘55’， ‘33’， ‘12’， ‘98’)</strong></p>
-<p><strong>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。方法可以将列表转换为元组</strong></p>
-<pre class="line-numbers language-python"><code class="language-python">demo <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"请输入:"</span><span class="token punctuation">)</span>
-list <span class="token operator">=</span> demo<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span>
-tuple <span class="token operator">=</span> list<span class="token punctuation">.</span>tuple<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>tuple<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>5.问题:定义一个至少有两个方法的类:        getString:从控制台输入获取字符串        printString::打印大写母的字符串。<br>还请包含简单的测试函数来测试类方法。<br>提示:使用_init__方法构造一些参数</strong></p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">inputoutDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        self<span class="token punctuation">.</span>s <span class="token operator">=</span> <span class="token string">''</span>
+                <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span>doctype html<span class="token operator">></span>
+<span class="token operator">&lt;</span>html<span class="token operator">></span>
+    <span class="token operator">&lt;</span>head<span class="token operator">></span>
+        <span class="token operator">&lt;</span>meta http<span class="token operator">-</span>equiv<span class="token operator">=</span><span class="token string">"Content-Type"</span> content<span class="token operator">=</span><span class="token string">"text/html; charset=utf-8"</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"Keywords"</span> content<span class="token operator">=</span><span class="token string">""</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"description"</span> content<span class="token operator">=</span><span class="token string">""</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>title<span class="token operator">></span>JSON<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">></span>
+<span class="token operator">&lt;</span>body<span class="token operator">></span>
 
-    <span class="token keyword">def</span> <span class="token function">getString</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'请输入：'</span><span class="token punctuation">)</span>
-        self<span class="token punctuation">.</span>s <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
-    <span class="token keyword">def</span> <span class="token function">printString</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>s<span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"json2.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
 
-demo <span class="token operator">=</span> inputoutDemo<span class="token punctuation">(</span><span class="token punctuation">)</span>
-demo<span class="token punctuation">.</span>getString<span class="token punctuation">(</span><span class="token punctuation">)</span>
-demo<span class="token punctuation">.</span>printString<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token comment" spellcheck="true">/*
+        JSON
+            一种轻量级数据交互格式，他是字符串。(早期的时候使用XML：清晰易懂、占用大)
+
+        JSON和js对象
+            js对象：是一种js数据类型，是js特有的，无法传递数据；
+            JSON：一种交互的格式，一种规范，基本上的语言都有字符串，可以交互、
+
+        JSON语法规则
+            1. JSON数据格式的键和字符串都为双引号；
+            2. 值：undefined、function、NaN    null==> None
+
+        JSON两种定义方式
+
+
+        JSON字符串的格式转换成JS对象
+            JSON.parse(JSON字符串) // 返回解析的js对象
+
+        JS对象转换JSON数据格式
+            JSON.stringify(obj1) // 返回JSON字符串
+
+     */</span>
+
+    <span class="token comment" spellcheck="true">// var obj = {</span>
+    <span class="token comment" spellcheck="true">//     "name" : "Mr.Z",</span>
+    <span class="token comment" spellcheck="true">//     "age": 18, // 可选的逗号结尾  早期IE不支持</span>
+    <span class="token comment" spellcheck="true">// }</span>
+
+    <span class="token comment" spellcheck="true">// alert(obj.name);</span>
+
+
+    <span class="token comment" spellcheck="true">// var obj = new Object(); // 通过new 构造函数创建 对象</span>
+    <span class="token comment" spellcheck="true">// obj.name = "yoonasy";</span>
+    <span class="token comment" spellcheck="true">// obj.age = 18;</span>
+
+    <span class="token comment" spellcheck="true">// alert(obj.age);</span>
+
+
+    <span class="token comment" spellcheck="true">// var json = '{\</span>
+    <span class="token comment" spellcheck="true">//     "name": "yoonasy",\</span>
+    <span class="token comment" spellcheck="true">//     "age": 18, \</span>
+    <span class="token comment" spellcheck="true">//     "marry": false\</span>
+    <span class="token comment" spellcheck="true">// }';</span>
+
+
+    <span class="token comment" spellcheck="true">// var obj = JSON.parse(json);</span>
+
+    <span class="token comment" spellcheck="true">// alert(typeof obj.marry);</span>
+
+
+    <span class="token comment" spellcheck="true">// var obj1 = {</span>
+    <span class="token comment" spellcheck="true">//     name: "yoonasy",</span>
+    <span class="token comment" spellcheck="true">//     age: 18,</span>
+    <span class="token comment" spellcheck="true">//     marry: false,</span>
+    <span class="token comment" spellcheck="true">// }</span>
+
+    <span class="token comment" spellcheck="true">// alert(typeof JSON.stringify(obj1));</span>
+
+    <span class="token comment" spellcheck="true">// for (var key in obj1) {</span>
+    <span class="token comment" spellcheck="true">//     console.log(key+"===="+obj1[key]);</span>
+    <span class="token comment" spellcheck="true">// }</span>
+
+
+    <span class="token comment" spellcheck="true">// alert(JSON);</span>
+
+    <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">'This is Obj'</span><span class="token punctuation">,</span>
+        age <span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+        marry<span class="token punctuation">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">// alert(JSON.parse('{"name": "yoonasy", "age": 18, "marry": false}'));</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+
+<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -668,9 +725,9 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《python day1》
+                    《JSON》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/23/day-01/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/26/json/" property="cc:attributionName"
                rel="cc:attributionURL">
                 王涛
             </a> 采用
@@ -710,9 +767,68 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/10/26/json/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="JSON">
+                        
+                        <span class="card-title">JSON</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            JSON，前后端交互的一个标准格式。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/web前端/" class="post-category" target="_blank">
+                                    web前端
+                                </a>
+                            
+                            <a href="/categories/web前端/JSON/" class="post-category" target="_blank">
+                                    JSON
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/web前端/" target="_blank">
+                        <span class="chip bg-color">web前端</span>
+                    </a>
+                    
+                    <a href="/tags/JSON/" target="_blank">
+                        <span class="chip bg-color">JSON</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/10/23/git-kong-zhi-ming-ling/">
                     <div class="card-image">
@@ -730,9 +846,9 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -750,55 +866,6 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
                     
                     <a href="/tags/git/" target="_blank">
                         <span class="chip bg-color">git</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/10/23/biao-dan/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="学习表单">
-                        
-                        <span class="card-title">学习表单</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            对前端表单这块内容的整体概述
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-23
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/web前端/" class="post-category" target="_blank">
-                                    web前端
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/web前端/" target="_blank">
-                        <span class="chip bg-color">web前端</span>
                     </a>
                     
                 </div>
