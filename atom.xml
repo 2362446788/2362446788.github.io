@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gentlesiri.top/"/>
-  <updated>2019-10-26T07:23:54.200Z</updated>
+  <updated>2019-10-30T00:41:30.977Z</updated>
   <id>https://gentlesiri.top/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>周报</title>
+    <link href="https://gentlesiri.top/2019/10/30/zhou-bao-yi/"/>
+    <id>https://gentlesiri.top/2019/10/30/zhou-bao-yi/</id>
+    <published>2019-10-30T06:01:54.000Z</published>
+    <updated>2019-10-30T00:41:30.977Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前端项目准备&quot;&gt;&lt;a href=&quot;#前端项目准备&quot; class=&quot;headerlink&quot; title=&quot;前端项目准备&quot;&gt;&lt;/a&gt;前端项目准备&lt;/h2&gt;&lt;h3 id=&quot;当前前端最火的框架之一–vue-js&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="web后端" scheme="https://gentlesiri.top/categories/web%E5%90%8E%E7%AB%AF/"/>
+    
+      <category term="vue" scheme="https://gentlesiri.top/categories/web%E5%90%8E%E7%AB%AF/vue/"/>
+    
+    
+      <category term="web前端" scheme="https://gentlesiri.top/tags/web%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="vue" scheme="https://gentlesiri.top/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>好物电商平台</title>
+    <link href="https://gentlesiri.top/2019/10/26/hao-wu/"/>
+    <id>https://gentlesiri.top/2019/10/26/hao-wu/</id>
+    <published>2019-10-26T07:17:18.000Z</published>
+    <updated>2019-10-29T14:45:06.576Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;基于vue-django的小区团购电商平台–好物&quot;&gt;&lt;a href=&quot;#基于vue-django的小区团购电商平台–好物&quot; class=&quot;headerlink&quot; title=&quot;基于vue +django的小区团购电商平台–好物&quot;&gt;&lt;/a&gt;基于vue
+        
+      
+    
+    </summary>
+    
+      <category term="web前端" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="vue" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/vue/"/>
+    
+      <category term="django" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/vue/django/"/>
+    
+    
+      <category term="vue" scheme="https://gentlesiri.top/tags/vue/"/>
+    
+      <category term="django" scheme="https://gentlesiri.top/tags/django/"/>
+    
+  </entry>
   
   <entry>
     <title>JSON</title>
@@ -73,6 +135,32 @@
   </entry>
   
   <entry>
+    <title>学习表单</title>
+    <link href="https://gentlesiri.top/2019/10/23/biao-dan/"/>
+    <id>https://gentlesiri.top/2019/10/23/biao-dan/</id>
+    <published>2019-10-23T06:01:54.000Z</published>
+    <updated>2019-10-25T01:27:57.464Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;表单的学习&quot;&gt;&lt;a href=&quot;#表单的学习&quot; class=&quot;headerlink&quot; title=&quot;表单的学习&quot;&gt;&lt;/a&gt;表单的学习&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="web前端" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="web前端" scheme="https://gentlesiri.top/tags/web%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python day1</title>
     <link href="https://gentlesiri.top/2019/10/23/day-01/"/>
     <id>https://gentlesiri.top/2019/10/23/day-01/</id>
@@ -101,32 +189,6 @@
   </entry>
   
   <entry>
-    <title>学习表单</title>
-    <link href="https://gentlesiri.top/2019/10/23/biao-dan/"/>
-    <id>https://gentlesiri.top/2019/10/23/biao-dan/</id>
-    <published>2019-10-23T06:01:54.000Z</published>
-    <updated>2019-10-25T01:27:57.464Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;表单的学习&quot;&gt;&lt;a href=&quot;#表单的学习&quot; class=&quot;headerlink&quot; title=&quot;表单的学习&quot;&gt;&lt;/a&gt;表单的学习&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-html&quot;&gt;&lt;code
-        
-      
-    
-    </summary>
-    
-      <category term="web前端" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="web前端" scheme="https://gentlesiri.top/tags/web%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Web网页开发</title>
     <link href="https://gentlesiri.top/2019/10/23/qian-duan-html/"/>
     <id>https://gentlesiri.top/2019/10/23/qian-duan-html/</id>
@@ -150,28 +212,6 @@
     
     
       <category term="web前端" scheme="https://gentlesiri.top/tags/web%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://gentlesiri.top/2019/09/17/hao-wu/"/>
-    <id>https://gentlesiri.top/2019/09/17/hao-wu/</id>
-    <published>2019-09-17T14:34:49.618Z</published>
-    <updated>2019-10-29T14:35:00.576Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;基于vue-django的小区团购电商平台–好物&quot;&gt;&lt;a href=&quot;#基于vue-django的小区团购电商平台–好物&quot; class=&quot;headerlink&quot; title=&quot;基于vue +django的小区团购电商平台–好物&quot;&gt;&lt;/a&gt;基于vue
-        
-      
-    
-    </summary>
-    
     
   </entry>
   

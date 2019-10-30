@@ -4,11 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="python day1, gentlesir 的博客">
+    <meta name="keywords" content="周报, gentlesir 的博客">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
-    <meta name="description" content="Python编程题Day_01今天是五道很简单的题目哦1.问题:编写一个程序，它将找到所有这些数字，可被7整除，但不是5的倍数，2000年至3200年(包括在内)。得到的数字应按逗号分隔的顺序打印在一行上。提示:考虑使用range(#beg">
+    <meta name="description" content="前端项目准备当前前端最火的框架之一–vue.js随着时代的发展，mvc架构已经不能实现更好的交互体验了，这时，mvvm的框架就进入了人们的眼球。
+本项目使用的是vue2.0,使用vue能实现完全分离的前后端项目，vue直接渲染前端数据，路由">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>python day1 | gentlesir 的博客</title>
+    <title>周报 | gentlesir 的博客</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -290,13 +291,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        python day1
+                        周报
                     </div>
                 </div>
             </div>
@@ -407,12 +408,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/python基础/" target="_blank">
-                            <span class="chip bg-color">python基础</span>
+                        <a href="/tags/web前端/" target="_blank">
+                            <span class="chip bg-color">web前端</span>
                         </a>
                         
-                        <a href="/tags/编程/" target="_blank">
-                            <span class="chip bg-color">编程</span>
+                        <a href="/tags/vue/" target="_blank">
+                            <span class="chip bg-color">vue</span>
                         </a>
                         
                     </div>
@@ -423,8 +424,12 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/python/" class="post-category" target="_blank">
-                            python
+                        <a href="/categories/web后端/" class="post-category" target="_blank">
+                            web后端
+                        </a>
+                        
+                        <a href="/categories/web后端/vue/" class="post-category" target="_blank">
+                            vue
                         </a>
                         
                     </div>
@@ -435,7 +440,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-23
+                    2019-10-30
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -449,14 +454,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    609
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
                 
@@ -467,50 +472,75 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Python编程题"><a href="#Python编程题" class="headerlink" title="Python编程题"></a>Python编程题</h1><h2 id="Day-01"><a href="#Day-01" class="headerlink" title="Day_01"></a>Day_01</h2><h3 id="今天是五道很简单的题目哦"><a href="#今天是五道很简单的题目哦" class="headerlink" title="今天是五道很简单的题目哦"></a>今天是五道很简单的题目哦</h3><p><strong>1.问题:编写一个程序，它将找到所有这些数字，可被7整除，但不是5的倍数，2000年至3200年(包括在内)。得到的数字应按逗号分隔的顺序打印在一行上。<br>提示:考虑使用range(#begin， #end)方法,使用到join函数：‘step’.join(i),以step的方式分割字符串列表i。</strong></p>
-<pre class="line-numbers language-python"><code class="language-python">l<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">,</span> <span class="token number">3201</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">7</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">and</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">5</span><span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        l<span class="token punctuation">.</span>append<span class="token punctuation">(</span>str<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>2.问题:编写一个可以计算给定数的阶乘的程序。结果应该以逗号分隔的顺序打印在一行上。假设向程序提供以下输入:8<br>则输出为:40320<br>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。</strong></p>
-<pre class="line-numbers language-pytho"><code class="language-pytho">def fact(x):
-    if(x == 0):
-        return 1
-    else:
-        return x * fact(x-1)
-demo = int(input("请输入："))
-print(fact(demo))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>3.问题:使用给定的整数n，编写一个程序生成一个包含(i, i<em>*</em></strong>i)的字典，该字典包含1到n之间的整数(两者都包含)。然后程序应该打印字典。<em><em><br><strong>假设向程序提供以下输入:8</strong><br>**则输出为:<br>{1:1，2:4，3:9，4:16，5:25，6:36，,7:49，8:64}</em></em></p>
-<p><strong>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。考虑使用dict类型()</strong></p>
-<pre class="line-numbers language-python"><code class="language-python">demo <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"请输入:"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-d <span class="token operator">=</span> dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>demo<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    d<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>i<span class="token operator">*</span>i
-<span class="token keyword">print</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>4.问题:编写一个程序，该程序接受控制台以逗号分隔的数字序列，并生成包含每个数字的列表和元组。假设向程序提供以下输入:<br>34岁,67年,55岁,33岁,12日,98年<br>则输出为:[‘34’， ‘67’， ‘55’， ‘33’， ‘12’， ‘98’]<br>               (‘34’， ‘67’， ‘55’， ‘33’， ‘12’， ‘98’)</strong></p>
-<p><strong>提示:在为问题提供输入数据的情况下，应该假设它是控制台输入。方法可以将列表转换为元组</strong></p>
-<pre class="line-numbers language-python"><code class="language-python">demo <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"请输入:"</span><span class="token punctuation">)</span>
-list <span class="token operator">=</span> demo<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span>
-tuple <span class="token operator">=</span> list<span class="token punctuation">.</span>tuple<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>tuple<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>5.问题:定义一个至少有两个方法的类:        getString:从控制台输入获取字符串        printString::打印大写母的字符串。<br>还请包含简单的测试函数来测试类方法。<br>提示:使用_init__方法构造一些参数</strong></p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">inputoutDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        self<span class="token punctuation">.</span>s <span class="token operator">=</span> <span class="token string">''</span>
+                <h2 id="前端项目准备"><a href="#前端项目准备" class="headerlink" title="前端项目准备"></a>前端项目准备</h2><h3 id="当前前端最火的框架之一–vue-js"><a href="#当前前端最火的框架之一–vue-js" class="headerlink" title="当前前端最火的框架之一–vue.js"></a>当前前端最火的框架之一–vue.js</h3><p>随着时代的发展，mvc架构已经不能实现更好的交互体验了，这时，mvvm的框架就进入了人们的眼球。</p>
+<p>本项目使用的是vue2.0,使用vue能实现完全分离的前后端项目，vue直接渲染前端数据，路由也由前端自己完成。</p>
+<h3 id="使用的组件库–vant，elemnet-ui"><a href="#使用的组件库–vant，elemnet-ui" class="headerlink" title="使用的组件库–vant，elemnet-ui"></a>使用的组件库–vant，elemnet-ui</h3><p>vant是有赞公司推出的一个前端组件库，本项目使用了很多的组件。element是一个基于桌面端的组件库。这两个组件库可以让我们在开发中更加的高效快捷。</p>
+<h2 id="项目实战"><a href="#项目实战" class="headerlink" title="项目实战"></a>项目实战</h2><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p>首先做移动端前，我们需要做移动端的适配工作。<br>在移动端（手机端、Pad端），设备尺寸参差不齐。如果想要写完一套代码，能够在所有移动设备上都正常运行，那么采用原生的<code>px</code>单位来设置是不行的。举个例子：<code>iPhone6</code>的尺寸是<code>375px</code>，如果我们想要一个盒子是占据整个宽度的一半，那么会将这个盒子的宽度设置为<code>187.5px</code>，但是并不是所有手机的宽度都是<code>375px</code>，因此就会造成问题。这时候我们可以通过rem来解决这个问题。</p>
+<h4 id="vue-cli"><a href="#vue-cli" class="headerlink" title="vue-cli"></a>vue-cli</h4><p><code>vue-cli</code>是和<code>vue</code>进行深度组合的工具，可以快速帮我们创建<code>vue</code>项目，并且把一些脚手架相关的代码给我们创建好。真正使用<code>vue</code>开发项目，都是用<code>vue-cli</code>来创建项目的。</p>
+<h4 id="rem适配原理："><a href="#rem适配原理：" class="headerlink" title="rem适配原理："></a><code>rem</code>适配原理：</h4><p><code>rem</code>虽然本身是用来设置字体的大小，但是也可以延伸到设置其他属性的尺寸。利用<code>rem</code>我们可以实现等比缩放。比如我将一个页面的宽度平均分成<code>100</code>份<code>unit=windowWidth/100</code>，然后让<code>html</code>的<code>font-size</code>等于<code>unit</code>，那么以下问题都可以实现：</p>
+<ol>
+<li>要实现浏览器一半的宽度，我们就可以通过<code>50rem</code>来实现（<code>rem</code>是单位）。</li>
+<li>设置字体大小为<code>16px</code>，转化成<code>rem</code>就是：<code>(16/unit)rem</code>。</li>
+</ol>
+<h4 id="在Vue-cli中实现rem布局："><a href="#在Vue-cli中实现rem布局：" class="headerlink" title="在Vue-cli中实现rem布局："></a>在<code>Vue-cli</code>中实现<code>rem</code>布局：</h4><p>在使用<code>vue-cli</code>创建的项目中，我们可以通过一些第三方包来方便的实现<code>rem</code>的布局。要安装两个包，分别是：<code>postcss-pxtorem</code>、<code>lib-flexible</code>。安装命令通过<code>npm install --save-dev postcss-pxtorem lib-flexible</code>安装即可。在安装完包后，还需要配置两个地方：</p>
+<ol>
+<li><pre><code>package.json</code></pre><pre class="line-numbers language-json"><code class="language-json"> <span class="token property">"postcss"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+       <span class="token property">"autoprefixer"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+       <span class="token property">"postcss-pxtorem"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+         <span class="token property">"rootValue"</span><span class="token operator">:</span> <span class="token number">37.5</span><span class="token punctuation">,</span>
+         <span class="token property">"propList"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+           <span class="token string">"*"</span>
+         <span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token property">"selectorBlackList"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+           <span class="token string">"van-*"</span>
+         <span class="token punctuation">]</span>
+       <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><pre><code>main.js</code></pre><pre class="line-numbers language-js"><code class="language-js"> <span class="token keyword">import</span> <span class="token string">"lib-flexible"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ol>
+<p>这样以后在写单位的时候，就不需要换算成<code>rem</code>，直接写<code>px</code>就可以，<code>postcss-pxtorem</code>会自动的将我们写的<code>px</code>转化成<code>rem</code>。而<code>lib-flexible</code>会根据当前的尺寸，来调整<code>html</code>上的<code>font-size</code>进行适配。</p>
+<h4 id="使用sass语法和vant组件库"><a href="#使用sass语法和vant组件库" class="headerlink" title="使用sass语法和vant组件库"></a>使用sass语法和vant组件库</h4><p>众所周知，<code>css</code>不是一门编程语言。他没法像<code>js</code>和<code>python</code>那样拥有逻辑处理的能力，甚至导入其他的<code>css</code>文件中的样式都做不到。而<code>Sass</code>就是为了解决<code>css</code>的这些问题。他它允许你使用变量、嵌套规则、 <code>mixins</code>、导入等众多功能，并且完全兼容<code>css</code>语法。<code>Sass</code>文件不能直接被网页所识别，写完<code>Sass</code>后，还需要专门的工具转化为<code>css</code>才能使用。</p>
+<pre><code>npm install node-sass==4.12.0 and sass-loader==8.0.0</code></pre><p><code>vant</code>库是有赞公司前端团队开源的一款针对<code>vue</code>库的组件库。里面集成了很多移动端用到的组件，包括按钮、图片、<code>Icon</code>图标等。而且因为有赞是一个做微商城的公司，所以有很多微商城的组件比如地址列表、商品卡片、优惠券等组件。</p>
+<h4 id="项目进度"><a href="#项目进度" class="headerlink" title="项目进度"></a>项目进度</h4><ol>
+<li><strong>首页及其商家详情</strong></li>
+</ol>
+<p><strong>首页</strong>使用了<code>vant</code>组件库的搜索组件<code>van-search</code>，下拉菜单组件<code>van-dropdown</code>，标签组件<code>van-tag</code>，评分组件<code>van-rate</code>。实现了如下的功能：</p>
+<img style="width:300px" src="C:\Users\Administrator\Desktop\周报\移动端\1.png">
 
-    <span class="token keyword">def</span> <span class="token function">getString</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'请输入：'</span><span class="token punctuation">)</span>
-        self<span class="token punctuation">.</span>s <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<p>在实现搜索栏时，直接调用<code>vant</code>的<code>van-search</code>组件呈现出来的结果是这样的：</p>
+<img style="width:300px" src="C:\Users\Administrator\Desktop\周报\移动端\2.png">
 
-    <span class="token keyword">def</span> <span class="token function">printString</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>s<span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<p>这样的样式不是我们所需求的，所以我就改了改他的样式，但是直接改自己所写的class没有起到效果，戒指就去<code>vant</code>官网找修改方法，最终知道了想要修改组件中的样式，必须用下面的语法：</p>
+<pre class="line-numbers language-sass"><code class="language-sass"><span class="token number">.</span><span class="token selector">van-search >>> </span><span class="token number">.</span><span class="token selector">van-search-detail{}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>接着下面的商家列表也是使用相对应的方法把样式调整到想要的结果。</p>
+<p><strong>商家详情</strong>使用了NavBar导航栏<code>mt-nav-bar</code>,Tab标签页<code>van-tab</code>，以及一个前端组件<code>better-scroll</code>，实现了如下的功能：</p>
+<p><strong>点菜页面</strong></p>
+<img style="width:300px" src="C:\Users\Administrator\Desktop\周报\移动端\3.png">
 
-demo <span class="token operator">=</span> inputoutDemo<span class="token punctuation">(</span><span class="token punctuation">)</span>
-demo<span class="token punctuation">.</span>getString<span class="token punctuation">(</span><span class="token punctuation">)</span>
-demo<span class="token punctuation">.</span>printString<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>本项目使用了一些在网站上扒取的一些数据<code>kfc.js</code>，这个点菜页面实现了返回首页功能，下拉查看商品，以及商品左右互联的功能。在实现商品左右互联的时候，出现了很多的小bug，但是在查看官方文档后以及问了以前的师兄，最终呈现出了左右互联的效果。</p>
+<p><strong>商品详情</strong></p>
+<img style="width:300px" src="C:\Users\Administrator\Desktop\周报\移动端\4.png">
 
+<p>在点击了商品，会弹出来商品的详情。</p>
+<p><strong>购物车</strong></p>
+<img style="width:300px" src="C:\Users\Administrator\Desktop\周报\移动端\5.png">
+
+<p>这里实现了里外商品数量互联的效果。</p>
+<ol start="2">
+<li><strong>订单详情</strong></li>
+</ol>
+<p><strong>订单详情</strong>实现效果如下：</p>
+<img style="width:300px" src="C:\Users\Administrator\Desktop\周报\移动端\6.png">
+
+<ol start="3">
+<li><strong>个人主页</strong></li>
+</ol>
+<p><strong>个人主页</strong>实现的效果如下：</p>
+<img style="width:300px" src="C:\Users\Administrator\Desktop\周报\移动端\7.png">
             </div>
             <hr />
 
@@ -668,9 +698,9 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《python day1》
+                    《周报》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/23/day-01/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/30/zhou-bao-yi/" property="cc:attributionName"
                rel="cc:attributionURL">
                 王涛
             </a> 采用
@@ -710,46 +740,56 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/10/23/biao-dan/">
+                <a href="/2019/10/30/zhou-bao-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="学习表单">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="周报">
                         
-                        <span class="card-title">学习表单</span>
+                        <span class="card-title">周报</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            对前端表单这块内容的整体概述
+                            移动端项目中的一些小总结
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/web前端/" class="post-category" target="_blank">
-                                    web前端
+                            <a href="/categories/web后端/" class="post-category" target="_blank">
+                                    web后端
+                                </a>
+                            
+                            <a href="/categories/web后端/vue/" class="post-category" target="_blank">
+                                    vue
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/web前端/" target="_blank">
                         <span class="chip bg-color">web前端</span>
+                    </a>
+                    
+                    <a href="/tags/vue/" target="_blank">
+                        <span class="chip bg-color">vue</span>
                     </a>
                     
                 </div>
@@ -763,24 +803,24 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/23/qian-duan-html/">
+                <a href="/2019/10/26/hao-wu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Web网页开发">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="好物电商平台">
                         
-                        <span class="card-title">Web网页开发</span>
+                        <span class="card-title">好物电商平台</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Web前端开发之前的一些小知识
+                            基于vue +django的小区团购电商平台--好物
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-23
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-26
                             </span>
                         <span class="publish-author">
                             
@@ -790,6 +830,14 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
                                     web前端
                                 </a>
                             
+                            <a href="/categories/web前端/vue/" class="post-category" target="_blank">
+                                    vue
+                                </a>
+                            
+                            <a href="/categories/web前端/vue/django/" class="post-category" target="_blank">
+                                    django
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -797,8 +845,12 @@ demo<span class="token punctuation">.</span>printString<span class="token punctu
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/web前端/" target="_blank">
-                        <span class="chip bg-color">web前端</span>
+                    <a href="/tags/vue/" target="_blank">
+                        <span class="chip bg-color">vue</span>
+                    </a>
+                    
+                    <a href="/tags/django/" target="_blank">
+                        <span class="chip bg-color">django</span>
                     </a>
                     
                 </div>
