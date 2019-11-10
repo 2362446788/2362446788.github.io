@@ -2,6 +2,22 @@
 <html lang="zh-CN">
 
 
+    <script>
+    (function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'; 
+    }
+    else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+ 
+
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="标签: vue, gentlesir 的博客">
@@ -316,28 +332,10 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <div class="tag-chips">
                 
                 
-                <a href="/tags/python基础/" title="python基础: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="python基础" style="background-color: #F9EBEA;">python基础
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/编程/" title="编程: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="编程" style="background-color: #F5EEF8;">编程
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/web前端/" title="web前端: 4">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="web前端" style="background-color: #D5F5E3;">web前端
+                            data-tagname="web前端" style="background-color: #F9EBEA;">web前端
                         <span class="tag-length">4</span>
                     </span>
                 </a>
@@ -346,7 +344,25 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 <a href="/tags/JSON/" title="JSON: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="JSON" style="background-color: #E8F8F5;">JSON
+                            data-tagname="JSON" style="background-color: #F5EEF8;">JSON
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/python基础/" title="python基础: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="python基础" style="background-color: #D5F5E3;">python基础
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/编程/" title="编程: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="编程" style="background-color: #E8F8F5;">编程
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -395,7 +411,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="周报">
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="周报">
                             
                             <span class="card-title">周报</span>
                         </div>
@@ -431,7 +447,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="好物电商平台">
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="好物电商平台">
                             
                             <span class="card-title">好物电商平台</span>
                         </div>
@@ -476,7 +492,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">6.4k</span>
+            <span class="white-color">6.3k</span>
             
 
             <br>
@@ -534,10 +550,10 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         var uvcountOffset = 20000;
 
         function fixCount() {
-            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
-                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
-                clearInterval(int);
-            }
+            // if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+            //     $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+            //     clearInterval(int);
+            // }
             if ($("#busuanzi_container_site_pv").css("display") != "none") {
                 $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
                 clearInterval(int);

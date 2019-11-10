@@ -2,6 +2,22 @@
 <html lang="zh-CN">
 
 
+    <script>
+    (function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'; 
+    }
+    else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+ 
+
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="分类: git, gentlesir 的博客">
@@ -317,20 +333,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 
                 
                 
-                <a href="/categories/python/" title="python: 1">
+                <a href="/categories/web前端/" title="web前端: 4">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">python
-                        <span class="tag-length">1</span>
+                            style="background-color: #F9EBEA;">web前端
+                        <span class="tag-length">4</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/web前端/" title="web前端: 4">
+                <a href="/categories/python/" title="python: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">web前端
-                        <span class="tag-length">4</span>
+                            style="background-color: #F5EEF8;">python
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -405,7 +421,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="git控制命令">
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="git控制命令">
                             
                             <span class="card-title">git控制命令</span>
                         </div>
@@ -457,7 +473,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">6.4k</span>
+            <span class="white-color">6.3k</span>
             
 
             <br>
@@ -515,10 +531,10 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         var uvcountOffset = 20000;
 
         function fixCount() {
-            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
-                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
-                clearInterval(int);
-            }
+            // if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+            //     $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+            //     clearInterval(int);
+            // }
             if ($("#busuanzi_container_site_pv").css("display") != "none") {
                 $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
                 clearInterval(int);

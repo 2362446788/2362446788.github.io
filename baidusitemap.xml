@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gentlesiri.top/2019/10/30/zhou-bao-yi/</loc>
-    <lastmod>2019-10-30</lastmod>
+    <loc>https://gentlesiri.top/2019/10/23/day-01/</loc>
+    <lastmod>2019-11-04</lastmod>
   </url>  <url>
     <loc>https://gentlesiri.top/2019/10/26/hao-wu/</loc>
-    <lastmod>2019-10-29</lastmod>
+    <lastmod>2019-10-30</lastmod>
+  </url>  <url>
+    <loc>https://gentlesiri.top/2019/10/30/zhou-bao-yi/</loc>
+    <lastmod>2019-10-30</lastmod>
   </url>  <url>
     <loc>https://gentlesiri.top/2019/10/26/json/</loc>
     <lastmod>2019-10-26</lastmod>
@@ -17,9 +20,6 @@
     <lastmod>2019-10-25</lastmod>
   </url>  <url>
     <loc>https://gentlesiri.top/2019/10/23/git-kong-zhi-ming-ling/</loc>
-    <lastmod>2019-10-25</lastmod>
-  </url>  <url>
-    <loc>https://gentlesiri.top/2019/10/23/day-01/</loc>
     <lastmod>2019-10-25</lastmod>
   </url>
 </urlset>

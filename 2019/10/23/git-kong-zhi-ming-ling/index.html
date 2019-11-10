@@ -2,6 +2,22 @@
 <html lang="zh-CN">
 
 
+    <script>
+    (function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'; 
+    }
+    else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+ 
+
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="git控制命令, gentlesir 的博客">
@@ -291,7 +307,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -773,7 +789,7 @@ git checkout -- 文件名<span aria-hidden="true" class="line-numbers-rows"><spa
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="python day1">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="python day1">
                         
                         <span class="card-title">python day1</span>
                     </div>
@@ -826,7 +842,7 @@ git checkout -- 文件名<span aria-hidden="true" class="line-numbers-rows"><spa
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="学习表单">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="学习表单">
                         
                         <span class="card-title">学习表单</span>
                     </div>
@@ -1019,7 +1035,7 @@ git checkout -- 文件名<span aria-hidden="true" class="line-numbers-rows"><spa
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">6.4k</span>
+            <span class="white-color">6.3k</span>
             
 
             <br>
@@ -1077,10 +1093,10 @@ git checkout -- 文件名<span aria-hidden="true" class="line-numbers-rows"><spa
         var uvcountOffset = 20000;
 
         function fixCount() {
-            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
-                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
-                clearInterval(int);
-            }
+            // if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+            //     $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+            //     clearInterval(int);
+            // }
             if ($("#busuanzi_container_site_pv").css("display") != "none") {
                 $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
                 clearInterval(int);
