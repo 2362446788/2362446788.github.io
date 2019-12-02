@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>腾讯云ubuntu的一些小操作</title>
+      <link href="/2019/11/27/teng-xun-yun-ubuntu-de-yi-xie-cao-zuo/"/>
+      <url>/2019/11/27/teng-xun-yun-ubuntu-de-yi-xie-cao-zuo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="root登录实现"><a href="#root登录实现" class="headerlink" title="root登录实现"></a>root登录实现</h2><p>我们都知道，腾讯云ubuntu不能通过root登录，只能用这个<code>ssh ubuntu@IP地址</code>登录，现在我们实现能以<code>ssh root@IP地址</code>登录。</p><h3 id="1-用ubuntu用户登陆："><a href="#1-用ubuntu用户登陆：" class="headerlink" title="1.用ubuntu用户登陆："></a>1.用ubuntu用户登陆：</h3><p><img src="http://q05xpc327.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E4%BA%911.png" alt="1.png"></p><h3 id="2-修改root密码："><a href="#2-修改root密码：" class="headerlink" title="2.修改root密码："></a>2.修改root密码：</h3><p><code>sudo passwd root</code></p><h3 id="3-修改ssh配置："><a href="#3-修改ssh配置：" class="headerlink" title="3.修改ssh配置："></a>3.修改ssh配置：</h3><p><code>vim /etc/ssh/sshd_config</code><br><img src="http://q05xpc327.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E4%BA%912.png" alt="2.png"><br>将黄色这两项修改为<strong><code>yes</code></strong></p><h3 id="4-重启ssh服务："><a href="#4-重启ssh服务：" class="headerlink" title="4.重启ssh服务："></a>4.重启ssh服务：</h3><p><code>sudo service ssh restart</code></p><h2 id="大功告成，可以使用root登录了。"><a href="#大功告成，可以使用root登录了。" class="headerlink" title="大功告成，可以使用root登录了。"></a>大功告成，可以使用root登录了。</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 腾讯云 </category>
+          
+          <category> ubuntu </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 腾讯云 </tag>
+            
+            <tag> ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>周报</title>
       <link href="/2019/10/30/zhou-bao-yi/"/>
       <url>/2019/10/30/zhou-bao-yi/</url>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gentlesiri.top/"/>
-  <updated>2019-10-30T01:11:50.492Z</updated>
+  <updated>2019-11-27T06:55:55.925Z</updated>
   <id>https://gentlesiri.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>腾讯云ubuntu的一些小操作</title>
+    <link href="https://gentlesiri.top/2019/11/27/teng-xun-yun-ubuntu-de-yi-xie-cao-zuo/"/>
+    <id>https://gentlesiri.top/2019/11/27/teng-xun-yun-ubuntu-de-yi-xie-cao-zuo/</id>
+    <published>2019-11-27T06:01:54.000Z</published>
+    <updated>2019-11-27T06:55:55.925Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;root登录实现&quot;&gt;&lt;a href=&quot;#root登录实现&quot; class=&quot;headerlink&quot; title=&quot;root登录实现&quot;&gt;&lt;/a&gt;root登录实现&lt;/h2&gt;&lt;p&gt;我们都知道，腾讯云ubuntu不能通过root登录，只能用这个&lt;code&gt;ssh
+        
+      
+    
+    </summary>
+    
+      <category term="腾讯云" scheme="https://gentlesiri.top/categories/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+      <category term="ubuntu" scheme="https://gentlesiri.top/categories/%E8%85%BE%E8%AE%AF%E4%BA%91/ubuntu/"/>
+    
+    
+      <category term="腾讯云" scheme="https://gentlesiri.top/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+      <category term="ubuntu" scheme="https://gentlesiri.top/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>周报</title>

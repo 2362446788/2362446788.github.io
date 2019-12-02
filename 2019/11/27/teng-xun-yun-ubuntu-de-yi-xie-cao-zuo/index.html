@@ -20,14 +20,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="JSON, gentlesir 的博客">
+    <meta name="keywords" content="腾讯云ubuntu的一些小操作, gentlesir 的博客">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
-    <meta name="description" content="&amp;lt;!doctype html&gt;
-&amp;lt;html&gt;
-    &amp;lt;head&gt;
-        &amp;lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=utf-8&#34;">
+    <meta name="description" content="root登录实现我们都知道，腾讯云ubuntu不能通过root登录，只能用这个ssh ubuntu@IP地址登录，现在我们实现能以ssh root@IP地址登录。
+1.用ubuntu用户登陆：
+2.修改root密码：sudo passwd ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -35,7 +34,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>JSON | gentlesir 的博客</title>
+    <title>腾讯云ubuntu的一些小操作 | gentlesir 的博客</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -309,13 +308,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        JSON
+                        腾讯云ubuntu的一些小操作
                     </div>
                 </div>
             </div>
@@ -426,12 +425,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/web前端/" target="_blank">
-                            <span class="chip bg-color">web前端</span>
+                        <a href="/tags/腾讯云/" target="_blank">
+                            <span class="chip bg-color">腾讯云</span>
                         </a>
                         
-                        <a href="/tags/JSON/" target="_blank">
-                            <span class="chip bg-color">JSON</span>
+                        <a href="/tags/ubuntu/" target="_blank">
+                            <span class="chip bg-color">ubuntu</span>
                         </a>
                         
                     </div>
@@ -442,12 +441,12 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/web前端/" class="post-category" target="_blank">
-                            web前端
+                        <a href="/categories/腾讯云/" class="post-category" target="_blank">
+                            腾讯云
                         </a>
                         
-                        <a href="/categories/web前端/JSON/" class="post-category" target="_blank">
-                            JSON
+                        <a href="/categories/腾讯云/ubuntu/" class="post-category" target="_blank">
+                            ubuntu
                         </a>
                         
                     </div>
@@ -458,7 +457,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-26
+                    2019-11-27
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -472,7 +471,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    330
+                    104
                 </div>
                 
 
@@ -495,100 +494,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span>doctype html<span class="token operator">></span>
-<span class="token operator">&lt;</span>html<span class="token operator">></span>
-    <span class="token operator">&lt;</span>head<span class="token operator">></span>
-        <span class="token operator">&lt;</span>meta http<span class="token operator">-</span>equiv<span class="token operator">=</span><span class="token string">"Content-Type"</span> content<span class="token operator">=</span><span class="token string">"text/html; charset=utf-8"</span> <span class="token operator">/</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"Keywords"</span> content<span class="token operator">=</span><span class="token string">""</span> <span class="token operator">/</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"description"</span> content<span class="token operator">=</span><span class="token string">""</span> <span class="token operator">/</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>title<span class="token operator">></span>JSON<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">></span>
-<span class="token operator">&lt;</span>body<span class="token operator">></span>
-
-
-<span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"json2.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
-<span class="token operator">&lt;</span>script<span class="token operator">></span>
-
-    <span class="token comment" spellcheck="true">/*
-        JSON
-            一种轻量级数据交互格式，他是字符串。(早期的时候使用XML：清晰易懂、占用大)
-
-        JSON和js对象
-            js对象：是一种js数据类型，是js特有的，无法传递数据；
-            JSON：一种交互的格式，一种规范，基本上的语言都有字符串，可以交互、
-
-        JSON语法规则
-            1. JSON数据格式的键和字符串都为双引号；
-            2. 值：undefined、function、NaN    null==> None
-
-        JSON两种定义方式
-
-
-        JSON字符串的格式转换成JS对象
-            JSON.parse(JSON字符串) // 返回解析的js对象
-
-        JS对象转换JSON数据格式
-            JSON.stringify(obj1) // 返回JSON字符串
-
-     */</span>
-
-    <span class="token comment" spellcheck="true">// var obj = {</span>
-    <span class="token comment" spellcheck="true">//     "name" : "Mr.Z",</span>
-    <span class="token comment" spellcheck="true">//     "age": 18, // 可选的逗号结尾  早期IE不支持</span>
-    <span class="token comment" spellcheck="true">// }</span>
-
-    <span class="token comment" spellcheck="true">// alert(obj.name);</span>
-
-
-    <span class="token comment" spellcheck="true">// var obj = new Object(); // 通过new 构造函数创建 对象</span>
-    <span class="token comment" spellcheck="true">// obj.name = "yoonasy";</span>
-    <span class="token comment" spellcheck="true">// obj.age = 18;</span>
-
-    <span class="token comment" spellcheck="true">// alert(obj.age);</span>
-
-
-    <span class="token comment" spellcheck="true">// var json = '{\</span>
-    <span class="token comment" spellcheck="true">//     "name": "yoonasy",\</span>
-    <span class="token comment" spellcheck="true">//     "age": 18, \</span>
-    <span class="token comment" spellcheck="true">//     "marry": false\</span>
-    <span class="token comment" spellcheck="true">// }';</span>
-
-
-    <span class="token comment" spellcheck="true">// var obj = JSON.parse(json);</span>
-
-    <span class="token comment" spellcheck="true">// alert(typeof obj.marry);</span>
-
-
-    <span class="token comment" spellcheck="true">// var obj1 = {</span>
-    <span class="token comment" spellcheck="true">//     name: "yoonasy",</span>
-    <span class="token comment" spellcheck="true">//     age: 18,</span>
-    <span class="token comment" spellcheck="true">//     marry: false,</span>
-    <span class="token comment" spellcheck="true">// }</span>
-
-    <span class="token comment" spellcheck="true">// alert(typeof JSON.stringify(obj1));</span>
-
-    <span class="token comment" spellcheck="true">// for (var key in obj1) {</span>
-    <span class="token comment" spellcheck="true">//     console.log(key+"===="+obj1[key]);</span>
-    <span class="token comment" spellcheck="true">// }</span>
-
-
-    <span class="token comment" spellcheck="true">// alert(JSON);</span>
-
-    <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
-        name<span class="token punctuation">:</span> <span class="token string">'This is Obj'</span><span class="token punctuation">,</span>
-        age <span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
-        marry<span class="token punctuation">:</span> <span class="token boolean">false</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment" spellcheck="true">// alert(JSON.parse('{"name": "yoonasy", "age": 18, "marry": false}'));</span>
-    <span class="token function">alert</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
-
-<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">></span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+                <h2 id="root登录实现"><a href="#root登录实现" class="headerlink" title="root登录实现"></a>root登录实现</h2><p>我们都知道，腾讯云ubuntu不能通过root登录，只能用这个<code>ssh ubuntu@IP地址</code>登录，现在我们实现能以<code>ssh root@IP地址</code>登录。</p>
+<h3 id="1-用ubuntu用户登陆："><a href="#1-用ubuntu用户登陆：" class="headerlink" title="1.用ubuntu用户登陆："></a>1.用ubuntu用户登陆：</h3><p><img src="http://q05xpc327.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E4%BA%911.png" alt="1.png"></p>
+<h3 id="2-修改root密码："><a href="#2-修改root密码：" class="headerlink" title="2.修改root密码："></a>2.修改root密码：</h3><p><code>sudo passwd root</code></p>
+<h3 id="3-修改ssh配置："><a href="#3-修改ssh配置：" class="headerlink" title="3.修改ssh配置："></a>3.修改ssh配置：</h3><p><code>vim /etc/ssh/sshd_config</code><br><img src="http://q05xpc327.bkt.clouddn.com/%E8%85%BE%E8%AE%AF%E4%BA%912.png" alt="2.png"><br>将黄色这两项修改为<strong><code>yes</code></strong></p>
+<h3 id="4-重启ssh服务："><a href="#4-重启ssh服务：" class="headerlink" title="4.重启ssh服务："></a>4.重启ssh服务：</h3><p><code>sudo service ssh restart</code></p>
+<h2 id="大功告成，可以使用root登录了。"><a href="#大功告成，可以使用root登录了。" class="headerlink" title="大功告成，可以使用root登录了。"></a>大功告成，可以使用root登录了。</h2>
             </div>
             <hr />
 
@@ -746,9 +657,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《JSON》
+                    《腾讯云ubuntu的一些小操作》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/26/json/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/11/27/teng-xun-yun-ubuntu-de-yi-xie-cao-zuo/" property="cc:attributionName"
                rel="cc:attributionURL">
                 王涛
             </a> 采用
@@ -788,9 +699,68 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/11/27/teng-xun-yun-ubuntu-de-yi-xie-cao-zuo/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="腾讯云ubuntu的一些小操作">
+                        
+                        <span class="card-title">腾讯云ubuntu的一些小操作</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            腾讯云ubuntu的远程root登录实现
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/腾讯云/" class="post-category" target="_blank">
+                                    腾讯云
+                                </a>
+                            
+                            <a href="/categories/腾讯云/ubuntu/" class="post-category" target="_blank">
+                                    ubuntu
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/腾讯云/" target="_blank">
+                        <span class="chip bg-color">腾讯云</span>
+                    </a>
+                    
+                    <a href="/tags/ubuntu/" target="_blank">
+                        <span class="chip bg-color">ubuntu</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/10/30/zhou-bao-yi/">
                     <div class="card-image">
@@ -808,9 +778,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -836,67 +806,6 @@
                     
                     <a href="/tags/vue/" target="_blank">
                         <span class="chip bg-color">vue</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/10/26/hao-wu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="好物电商平台">
-                        
-                        <span class="card-title">好物电商平台</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            基于vue +django的小区团购电商平台--好物
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-26
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/web前端/" class="post-category" target="_blank">
-                                    web前端
-                                </a>
-                            
-                            <a href="/categories/web前端/vue/" class="post-category" target="_blank">
-                                    vue
-                                </a>
-                            
-                            <a href="/categories/web前端/vue/django/" class="post-category" target="_blank">
-                                    django
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/vue/" target="_blank">
-                        <span class="chip bg-color">vue</span>
-                    </a>
-                    
-                    <a href="/tags/django/" target="_blank">
-                        <span class="chip bg-color">django</span>
                     </a>
                     
                 </div>
