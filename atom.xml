@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gentlesiri.top/"/>
-  <updated>2019-11-27T06:55:55.925Z</updated>
+  <updated>2019-12-04T03:01:06.967Z</updated>
   <id>https://gentlesiri.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何让服务器项目一直运行</title>
+    <link href="https://gentlesiri.top/2019/12/04/fu-wu-qi-yi-zhi-yun-xing-xiang-mu/"/>
+    <id>https://gentlesiri.top/2019/12/04/fu-wu-qi-yi-zhi-yun-xing-xiang-mu/</id>
+    <published>2019-12-04T02:30:34.156Z</published>
+    <updated>2019-12-04T03:01:06.967Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;所需工具&quot;&gt;&lt;a href=&quot;#所需工具&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="云服务器" scheme="https://gentlesiri.top/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="xshell" scheme="https://gentlesiri.top/categories/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/xshell/"/>
+    
+    
+      <category term="云服务器" scheme="https://gentlesiri.top/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="xshell" scheme="https://gentlesiri.top/tags/xshell/"/>
+    
+  </entry>
   
   <entry>
     <title>腾讯云ubuntu的一些小操作</title>
