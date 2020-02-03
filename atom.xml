@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gentlesiri.top/"/>
-  <updated>2019-12-04T03:01:06.967Z</updated>
+  <updated>2020-02-03T05:22:44.826Z</updated>
   <id>https://gentlesiri.top/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://gentlesiri.top/2020/02/03/git-ban-ben-kong-zhi-xi-tong/"/>
+    <id>https://gentlesiri.top/2020/02/03/git-ban-ben-kong-zhi-xi-tong/</id>
+    <published>2020-02-03T05:23:17.877Z</published>
+    <updated>2020-02-03T05:22:44.826Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;GIT版本控制系统&quot;&gt;&lt;a href=&quot;#GIT版本控制系统&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>腾讯云服务器mysql远程连接</title>
+    <link href="https://gentlesiri.top/2019/12/11/yun-fu-wu-qi-mysql/"/>
+    <id>https://gentlesiri.top/2019/12/11/yun-fu-wu-qi-mysql/</id>
+    <published>2019-12-11T02:12:54.927Z</published>
+    <updated>2019-12-11T02:30:46.184Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;设置常规连接&quot;&gt;&lt;a href=&quot;#设置常规连接&quot; class=&quot;headerlink&quot; title=&quot;设置常规连接&quot;&gt;&lt;/a&gt;设置常规连接&lt;/h3&gt;&lt;p&gt;首先根据navicat的操作设置如下步骤：&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="腾讯云" scheme="https://gentlesiri.top/categories/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+      <category term="ubuntu" scheme="https://gentlesiri.top/categories/%E8%85%BE%E8%AE%AF%E4%BA%91/ubuntu/"/>
+    
+      <category term="mysql" scheme="https://gentlesiri.top/categories/%E8%85%BE%E8%AE%AF%E4%BA%91/ubuntu/mysql/"/>
+    
+    
+      <category term="腾讯云" scheme="https://gentlesiri.top/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+      <category term="ubuntu" scheme="https://gentlesiri.top/tags/ubuntu/"/>
+    
+      <category term="mysql" scheme="https://gentlesiri.top/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>如何让服务器项目一直运行</title>
@@ -107,36 +164,6 @@
   </entry>
   
   <entry>
-    <title>JSON</title>
-    <link href="https://gentlesiri.top/2019/10/26/json/"/>
-    <id>https://gentlesiri.top/2019/10/26/json/</id>
-    <published>2019-10-26T07:17:18.000Z</published>
-    <updated>2019-10-26T07:23:54.200Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;pre class=&quot;line-numbers language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token
-        
-      
-    
-    </summary>
-    
-      <category term="web前端" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JSON" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/JSON/"/>
-    
-    
-      <category term="web前端" scheme="https://gentlesiri.top/tags/web%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JSON" scheme="https://gentlesiri.top/tags/JSON/"/>
-    
-  </entry>
-  
-  <entry>
     <title>好物电商平台</title>
     <link href="https://gentlesiri.top/2019/10/26/hao-wu/"/>
     <id>https://gentlesiri.top/2019/10/26/hao-wu/</id>
@@ -165,6 +192,36 @@
       <category term="vue" scheme="https://gentlesiri.top/tags/vue/"/>
     
       <category term="django" scheme="https://gentlesiri.top/tags/django/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JSON</title>
+    <link href="https://gentlesiri.top/2019/10/26/json/"/>
+    <id>https://gentlesiri.top/2019/10/26/json/</id>
+    <published>2019-10-26T07:17:18.000Z</published>
+    <updated>2019-10-26T07:23:54.200Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token
+        
+      
+    
+    </summary>
+    
+      <category term="web前端" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JSON" scheme="https://gentlesiri.top/categories/web%E5%89%8D%E7%AB%AF/JSON/"/>
+    
+    
+      <category term="web前端" scheme="https://gentlesiri.top/tags/web%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JSON" scheme="https://gentlesiri.top/tags/JSON/"/>
     
   </entry>
   

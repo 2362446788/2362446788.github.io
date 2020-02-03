@@ -4,6 +4,52 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2020/02/03/git-ban-ben-kong-zhi-xi-tong/"/>
+      <url>/2020/02/03/git-ban-ben-kong-zhi-xi-tong/</url>
+      
+        <content type="html"><![CDATA[<h3 id="GIT版本控制系统"><a href="#GIT版本控制系统" class="headerlink" title="GIT版本控制系统"></a>GIT版本控制系统</h3><blockquote><p>版本控制系统：</p><ol><li>记录历史版本信息（记录每一次修改的记录）</li><li>方便团队相互之间协作开发</li></ol><p>…….</p><p>常用的版本控制系统</p><ul><li>cvs / svn：集中式版本控制系统</li><li>git ：分布式版本控制系统</li></ul></blockquote><h4 id="GIT工作原理"><a href="#GIT工作原理" class="headerlink" title="GIT工作原理"></a>GIT工作原理</h4><ul><li>工作区：我们能看到的，并且用来写代码的区域</li><li>暂存区：临时存储用的</li><li>历史区：生成历史版本</li></ul><p>工作区 -&gt; 暂存区 -&gt; 历史区</p><p><strong>1.GIT的全局配置</strong></p><blockquote><p>第一次安装完成git后，我们在全局环境下配置基本信息：我是谁？</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">$ git config -l  查看配置信息$ git config --global -l  查看全局配置信息配置全局信息：用户名和邮箱$ git config --global user.name 'xxx'$ git config --global user.email 'xxx@xx.xx'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>2.创建仓库完成版本控制</strong></p><blockquote><p>创建本地git仓库</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">$ git init //=>会生成一个隐藏文件夹 “.git”（这个文件夹千万不要删，因为暂存区和历史区还有一些其它的信息都在这里，删了就不是一个完整的git仓库）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><blockquote><p>在本地编写完成代码后（在工作区），把一些文件提交到暂存区</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">$ git add xxx  把某一个文件或者文件夹提交到暂存区$ git add .  把当前仓库中所有最新修改的文件都提交到暂存区$ git add -A$ git status 查看当前文件的状态（红色代表在工作区，绿色代表在暂存区，看不见东西证明所有修改的信息都已经提交到历史区）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>把暂存区内容提交到历史区</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">$ git commit -m'描述信息：本次提交内容的一个描述'查看历史版本信息（历史记录）$ git log$ git reflog  包含回滚的信息<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>历史就回滚</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">$ git reset --hard 版本号<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="把本地仓库与远程仓库连接起来"><a href="#把本地仓库与远程仓库连接起来" class="headerlink" title="把本地仓库与远程仓库连接起来"></a>把本地仓库与远程仓库连接起来</h3><pre class="line-numbers language-shell"><code class="language-shell">//建立连接//查看本次仓库和哪些远程仓库保持连接$ git remote -v//让本地仓库和远程仓库新建一个连接 origin是随便起的一个连接名（不过一般都叫做origin）$ git remote add origin [GIT远程仓库地址]//删除关联信息$ git remote remove(rm) origin<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="F:%5Cgit%5C1.png" alt="1"></p><pre class="line-numbers language-shell"><code class="language-shell">提交前最好先拉取$ git pull origin master把本地代码提交到远程仓库(需要输入github的用户名密码)$ git push origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-shell"><code class="language-shell">$ git clone [远程仓库git地址] [别名：可以不用设置，默认是仓库名]/**真实项目开发流程：*1.组长创建中央仓库（增加协作者）*2.小组成员基于 $ git clone 把远程仓库克隆到本地仓库（解决了三个事情：初始化一个本地仓库“git init”，和对应的远程仓库保持了关联“git remote add”。把远程仓库拉取到本地“git pull”）*3.每个组员写完自己的代码后，基于“git add/git commit”把自己的代码存放到历史区，然后通过“git pull/git push”把本地信息和远程仓库信息保持一致（可能涉及冲突的处理）*/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>腾讯云服务器mysql远程连接</title>
+      <link href="/2019/12/11/yun-fu-wu-qi-mysql/"/>
+      <url>/2019/12/11/yun-fu-wu-qi-mysql/</url>
+      
+        <content type="html"><![CDATA[<h3 id="设置常规连接"><a href="#设置常规连接" class="headerlink" title="设置常规连接"></a>设置常规连接</h3><p>首先根据navicat的操作设置如下步骤：</p><p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5Chexo%5Csource_posts%5Cubuntu%5C%E5%B8%B8%E8%A7%84%E8%BF%9E%E6%8E%A5.png" alt></p><p>主机IP地址直接设置为0.0.0.0，其他信息按照自己的对应信息填写就行。</p><h3 id="设置ssh连接"><a href="#设置ssh连接" class="headerlink" title="设置ssh连接"></a>设置ssh连接</h3><p><img src="C:%5CUsers%5CAdministrator%5CDesktop%5Chexo%5Csource_posts%5Cubuntu%5Cssh%E8%BF%9E%E6%8E%A5.png" alt></p><p>这样就大功告成了！！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 腾讯云 </category>
+          
+          <category> ubuntu </category>
+          
+          <category> mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 腾讯云 </tag>
+            
+            <tag> ubuntu </tag>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何让服务器项目一直运行</title>
       <link href="/2019/12/04/fu-wu-qi-yi-zhi-yun-xing-xiang-mu/"/>
       <url>/2019/12/04/fu-wu-qi-yi-zhi-yun-xing-xiang-mu/</url>
@@ -91,35 +137,6 @@
     
     
     <entry>
-      <title>JSON</title>
-      <link href="/2019/10/26/json/"/>
-      <url>/2019/10/26/json/</url>
-      
-        <content type="html"><![CDATA[<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span>doctype html<span class="token operator">></span><span class="token operator">&lt;</span>html<span class="token operator">></span>    <span class="token operator">&lt;</span>head<span class="token operator">></span>        <span class="token operator">&lt;</span>meta http<span class="token operator">-</span>equiv<span class="token operator">=</span><span class="token string">"Content-Type"</span> content<span class="token operator">=</span><span class="token string">"text/html; charset=utf-8"</span> <span class="token operator">/</span><span class="token operator">></span>        <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"Keywords"</span> content<span class="token operator">=</span><span class="token string">""</span> <span class="token operator">/</span><span class="token operator">></span>        <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"description"</span> content<span class="token operator">=</span><span class="token string">""</span> <span class="token operator">/</span><span class="token operator">></span>        <span class="token operator">&lt;</span>title<span class="token operator">></span>JSON<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span>    <span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">></span><span class="token operator">&lt;</span>body<span class="token operator">></span><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"json2.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span class="token operator">&lt;</span>script<span class="token operator">></span>    <span class="token comment" spellcheck="true">/*        JSON            一种轻量级数据交互格式，他是字符串。(早期的时候使用XML：清晰易懂、占用大)        JSON和js对象            js对象：是一种js数据类型，是js特有的，无法传递数据；            JSON：一种交互的格式，一种规范，基本上的语言都有字符串，可以交互、        JSON语法规则            1. JSON数据格式的键和字符串都为双引号；            2. 值：undefined、function、NaN    null==> None        JSON两种定义方式        JSON字符串的格式转换成JS对象            JSON.parse(JSON字符串) // 返回解析的js对象        JS对象转换JSON数据格式            JSON.stringify(obj1) // 返回JSON字符串     */</span>    <span class="token comment" spellcheck="true">// var obj = {</span>    <span class="token comment" spellcheck="true">//     "name" : "Mr.Z",</span>    <span class="token comment" spellcheck="true">//     "age": 18, // 可选的逗号结尾  早期IE不支持</span>    <span class="token comment" spellcheck="true">// }</span>    <span class="token comment" spellcheck="true">// alert(obj.name);</span>    <span class="token comment" spellcheck="true">// var obj = new Object(); // 通过new 构造函数创建 对象</span>    <span class="token comment" spellcheck="true">// obj.name = "yoonasy";</span>    <span class="token comment" spellcheck="true">// obj.age = 18;</span>    <span class="token comment" spellcheck="true">// alert(obj.age);</span>    <span class="token comment" spellcheck="true">// var json = '{\</span>    <span class="token comment" spellcheck="true">//     "name": "yoonasy",\</span>    <span class="token comment" spellcheck="true">//     "age": 18, \</span>    <span class="token comment" spellcheck="true">//     "marry": false\</span>    <span class="token comment" spellcheck="true">// }';</span>    <span class="token comment" spellcheck="true">// var obj = JSON.parse(json);</span>    <span class="token comment" spellcheck="true">// alert(typeof obj.marry);</span>    <span class="token comment" spellcheck="true">// var obj1 = {</span>    <span class="token comment" spellcheck="true">//     name: "yoonasy",</span>    <span class="token comment" spellcheck="true">//     age: 18,</span>    <span class="token comment" spellcheck="true">//     marry: false,</span>    <span class="token comment" spellcheck="true">// }</span>    <span class="token comment" spellcheck="true">// alert(typeof JSON.stringify(obj1));</span>    <span class="token comment" spellcheck="true">// for (var key in obj1) {</span>    <span class="token comment" spellcheck="true">//     console.log(key+"===="+obj1[key]);</span>    <span class="token comment" spellcheck="true">// }</span>    <span class="token comment" spellcheck="true">// alert(JSON);</span>    <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>        name<span class="token punctuation">:</span> <span class="token string">'This is Obj'</span><span class="token punctuation">,</span>        age <span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span>        marry<span class="token punctuation">:</span> <span class="token boolean">false</span>    <span class="token punctuation">}</span>    <span class="token comment" spellcheck="true">// alert(JSON.parse('{"name": "yoonasy", "age": 18, "marry": false}'));</span>    <span class="token function">alert</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> web前端 </category>
-          
-          <category> JSON </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> web前端 </tag>
-            
-            <tag> JSON </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>好物电商平台</title>
       <link href="/2019/10/26/hao-wu/"/>
       <url>/2019/10/26/hao-wu/</url>
@@ -143,6 +160,35 @@
             <tag> vue </tag>
             
             <tag> django </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JSON</title>
+      <link href="/2019/10/26/json/"/>
+      <url>/2019/10/26/json/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span>doctype html<span class="token operator">></span><span class="token operator">&lt;</span>html<span class="token operator">></span>    <span class="token operator">&lt;</span>head<span class="token operator">></span>        <span class="token operator">&lt;</span>meta http<span class="token operator">-</span>equiv<span class="token operator">=</span><span class="token string">"Content-Type"</span> content<span class="token operator">=</span><span class="token string">"text/html; charset=utf-8"</span> <span class="token operator">/</span><span class="token operator">></span>        <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"Keywords"</span> content<span class="token operator">=</span><span class="token string">""</span> <span class="token operator">/</span><span class="token operator">></span>        <span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">"description"</span> content<span class="token operator">=</span><span class="token string">""</span> <span class="token operator">/</span><span class="token operator">></span>        <span class="token operator">&lt;</span>title<span class="token operator">></span>JSON<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span>    <span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">></span><span class="token operator">&lt;</span>body<span class="token operator">></span><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"json2.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span class="token operator">&lt;</span>script<span class="token operator">></span>    <span class="token comment" spellcheck="true">/*        JSON            一种轻量级数据交互格式，他是字符串。(早期的时候使用XML：清晰易懂、占用大)        JSON和js对象            js对象：是一种js数据类型，是js特有的，无法传递数据；            JSON：一种交互的格式，一种规范，基本上的语言都有字符串，可以交互、        JSON语法规则            1. JSON数据格式的键和字符串都为双引号；            2. 值：undefined、function、NaN    null==> None        JSON两种定义方式        JSON字符串的格式转换成JS对象            JSON.parse(JSON字符串) // 返回解析的js对象        JS对象转换JSON数据格式            JSON.stringify(obj1) // 返回JSON字符串     */</span>    <span class="token comment" spellcheck="true">// var obj = {</span>    <span class="token comment" spellcheck="true">//     "name" : "Mr.Z",</span>    <span class="token comment" spellcheck="true">//     "age": 18, // 可选的逗号结尾  早期IE不支持</span>    <span class="token comment" spellcheck="true">// }</span>    <span class="token comment" spellcheck="true">// alert(obj.name);</span>    <span class="token comment" spellcheck="true">// var obj = new Object(); // 通过new 构造函数创建 对象</span>    <span class="token comment" spellcheck="true">// obj.name = "yoonasy";</span>    <span class="token comment" spellcheck="true">// obj.age = 18;</span>    <span class="token comment" spellcheck="true">// alert(obj.age);</span>    <span class="token comment" spellcheck="true">// var json = '{\</span>    <span class="token comment" spellcheck="true">//     "name": "yoonasy",\</span>    <span class="token comment" spellcheck="true">//     "age": 18, \</span>    <span class="token comment" spellcheck="true">//     "marry": false\</span>    <span class="token comment" spellcheck="true">// }';</span>    <span class="token comment" spellcheck="true">// var obj = JSON.parse(json);</span>    <span class="token comment" spellcheck="true">// alert(typeof obj.marry);</span>    <span class="token comment" spellcheck="true">// var obj1 = {</span>    <span class="token comment" spellcheck="true">//     name: "yoonasy",</span>    <span class="token comment" spellcheck="true">//     age: 18,</span>    <span class="token comment" spellcheck="true">//     marry: false,</span>    <span class="token comment" spellcheck="true">// }</span>    <span class="token comment" spellcheck="true">// alert(typeof JSON.stringify(obj1));</span>    <span class="token comment" spellcheck="true">// for (var key in obj1) {</span>    <span class="token comment" spellcheck="true">//     console.log(key+"===="+obj1[key]);</span>    <span class="token comment" spellcheck="true">// }</span>    <span class="token comment" spellcheck="true">// alert(JSON);</span>    <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>        name<span class="token punctuation">:</span> <span class="token string">'This is Obj'</span><span class="token punctuation">,</span>        age <span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span>        marry<span class="token punctuation">:</span> <span class="token boolean">false</span>    <span class="token punctuation">}</span>    <span class="token comment" spellcheck="true">// alert(JSON.parse('{"name": "yoonasy", "age": 18, "marry": false}'));</span>    <span class="token function">alert</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> web前端 </category>
+          
+          <category> JSON </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> web前端 </tag>
+            
+            <tag> JSON </tag>
             
         </tags>
       
